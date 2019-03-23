@@ -10,9 +10,17 @@ $home = 'active';
 
 include ('includes/header.php'); 
  ?>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Homepage Header</h1>
+	<p>Test</p>
+</body>
+</html>
 
-<h1>Homepage Header</h1>
-<p>Test</p>
 
 
 
