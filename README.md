@@ -6,18 +6,18 @@ _"The Best Philly Cheesesteak Sandwich this side of the Atlantic"_
 
 
 # Pages
-## Homepage/Main Page (About Us)
+## Homepage/Main Page (About Us) @Ying
 The history of the product, photographs at the events (markets), slogan, opening times + markets.
 
-## Shop
+## Shop @ Kristan
 * Menu + Prices
 * Merchandise
 
-## Know Us
+## Know Us @ Craig
 * Blog 
 * Reviews
 
-## Contact
+## Contact @ Philip
 * Locations (w/Google Map)
 * Times
 * Contact email/form
