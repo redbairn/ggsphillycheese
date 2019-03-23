@@ -11,6 +11,7 @@ $home = 'active';
 include ('includes/header.php'); 
  ?>
 <h1>Contact Page</h1>
+<h3>HelloWorld</h3>
 
 
 <?php include ('includes/footer.php'); ?>
