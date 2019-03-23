@@ -5,7 +5,7 @@
 * Date: 2019/03/23
 **************************************************************************************/
 //define page title
-$title = 'Contacts';
+$title = 'contact';
 $home = 'active';
 
 include ('includes/header.php'); 
