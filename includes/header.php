@@ -10,8 +10,8 @@
   </head>
   <body>
   
-	<nav>
-		<ul id="main_nav">
+	<nav id="main_nav">
+		<ul class="navigation">
 			<li><a class="<?php if(isset($home)){ echo $home; } ?>" href="index.php">Home</a></li>
 			<li class="dropdown"><a class="<?php if(isset($shop)){ echo $shop; } ?> href="javascript:void(0)" class="dropbtn">Shop</a>
 				<div class="dropdown-content">
@@ -19,6 +19,9 @@
 				  <a href="menu.php">Menu</a>
 				</div>
 			</li>
+		</ul>	
+		<img id="logo" src="img/GGs_transparent.png" />
+		<ul class="navigation">
 			<li><a class="<?php if(isset($about)){ echo $about; } ?>" href="about.php">About Us</a></li>
 			<li><a class="<?php if(isset($contact)){ echo $contact; } ?>" href="contact.php">Contact</a></li>
 		</ul>
