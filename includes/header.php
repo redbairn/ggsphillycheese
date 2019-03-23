@@ -13,12 +13,7 @@
 	<nav id="main_nav">
 		<ul class="navigation">
 			<li><a class="<?php if(isset($home)){ echo $home; } ?>" href="index.php">Home</a></li>
-			<li class="dropdown"><a class="<?php if(isset($shop)){ echo $shop; } ?> href="javascript:void(0)" class="dropbtn">Shop</a>
-				<div class="dropdown-content">
-				  <a href="merch.php">Merchandise</a>
-				  <a href="menu.php">Menu</a>
-				</div>
-			</li>
+			<li><a class="<?php if(isset($shop)){ echo $shop; } ?>" href="shop.php">Shop</a></li>
 		</ul>	
 		<div id="logo">
 			<img id="logo_img" src="img/GGs_transparent.png" />

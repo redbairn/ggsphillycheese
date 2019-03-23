@@ -130,3 +130,11 @@ li.dropdown {
 	font-weight:normal;
 	font-style:normal;
 }
+
+/*Footer*/
+footer{
+	background: #eee;
+	height: 150px;
+	text-align:center;
+	padding-top: 5%;
+}
