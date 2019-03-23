@@ -6,6 +6,8 @@
 **************************************************************************************/
 //define page title
 $title = 'Homepage';
+$home = 'active';
+
 include ('includes/header.php'); 
  ?>
 
