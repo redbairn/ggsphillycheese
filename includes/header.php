@@ -20,7 +20,10 @@
 				</div>
 			</li>
 		</ul>	
-		<img id="logo" src="img/GGs_transparent.png" />
+		<div id="logo">
+			<img id="logo_img" src="img/GGs_transparent.png" />
+			<h1 id="logo_text">GG'S PHILLY CHEESE</h1>
+		</div>
 		<ul class="navigation">
 			<li><a class="<?php if(isset($about)){ echo $about; } ?>" href="about.php">About Us</a></li>
 			<li><a class="<?php if(isset($contact)){ echo $contact; } ?>" href="contact.php">Contact</a></li>
