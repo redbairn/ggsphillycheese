@@ -106,12 +106,12 @@ li.dropdown {
 	width: 280px;
 }
 #logo_img {
-  adisplay: inline-block;
-  vertical-align: top;
-  width: 260px;
-  height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	width: 260px;
+	height: 100%;
 	margin-left: 1%;
-  margin-right: 1%;
+	margin-right: 1%;
 	float:left;
 	line-height:12px;
 }
@@ -156,6 +156,8 @@ footer{
 	background: #F5842E;  /*Old f29107*/
 	text-align:center;
 	margin-left:25%;
+	border-color:#B85B14;
+	border-style: solid;
 }
 .footer_container a:visited { 
 	text-decoration: none; 
