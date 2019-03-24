@@ -40,5 +40,17 @@ include ('includes/header.php');
     </div>
     </form>
 </div>
+
+<div class="social">
+<ul>
+    <li class="socialMediaList"><a href="https://www.facebook.com/GGsphillycheese/"><img src="img/socialMediaIcons/iconfinder_facebook" alt="Facebook Icon"></a></li>
+    <li class="socialMediaList"><a href="https://www.instagram.com/ggsphillycheese/"><img src="img/socialMediaIcons/iconfinder_instagram" alt="Instagram Icon"></a></li>
+    <li class="socialMediaList"><a href="https://twitter.com/"><img src="img/socialMediaIcons/iconfinder_twitter" alt="Twitter Icon"></a></li>
+    <li class="socialMediaList"><a href="https://www.youtube.com/"><img src="img/socialMediaIcons/iconfinder_youtube" alt="Youtube Icon"></a></li>
+    <li class="socialMediaList"><a href=""><img src="img/socialMediaIcons/iconfinder_whatsapp" alt="whatsApp Icon"></a></li>
+</ul>
+
+</div>
+
 	
 <?php include ('includes/footer.php'); ?>
