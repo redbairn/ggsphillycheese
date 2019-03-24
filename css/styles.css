@@ -147,6 +147,7 @@ footer{
 	color: black;
 	background-color: #E6E6E6; /*Originally #eee*/
 }
+/*Reference here: https://stackoverflow.com/questions/4675371/vertical-divider-css*/
 .headerDivider1 {
      border-left:1px solid #494949; 
      border-right:1px solid #16222c; 
