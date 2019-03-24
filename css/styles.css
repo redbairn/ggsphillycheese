@@ -158,6 +158,20 @@ footer{
 	text-align:center;
 	margin-left:25%;
 }
+.footer_container a:visited { 
+	text-decoration: none; 
+	color:black; 
+}
+.footer_container a:hover, a:active { 
+	text-decoration: none; 
+	color:red; 
+}
+.footer_container a { 
+	color:black; 
+	text-decoration: none;
+}
+
+
 .footer_content_l{
 	padding: 0px 0px 5px 20px; 
 	text-align:left;
@@ -167,6 +181,7 @@ footer{
 }
 .footer_content_r{
 	text-align:center;
+	padding: 0px 0px 0px 0px;
 }
 .footer_container{
 	display: grid;
