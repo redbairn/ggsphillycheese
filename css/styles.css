@@ -253,6 +253,9 @@ body {
 }
 
 /* Form CSS*/
+textarea {
+  resize: none;
+}
 .ccform {
    margin: 0 auto;
     width: 800px;
