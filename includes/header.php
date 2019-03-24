@@ -24,7 +24,7 @@
 			<li><a class="<?php if(isset($contact)){ echo $contact; } ?>" href="contact.php">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="wrapper"><!--End of Wrapper is in the footer.php-->
+	<div class="footer_wrapper"><!--End of Wrapper is in the footer.php-->
 	
 	
 			
