@@ -10,13 +10,6 @@ $home = 'active';
 
 include ('includes/header.php'); 
  ?>
-
 	<h1>Homepage Header</h1>
 	<p>Test</p>
-
-
-
-
-
-
 <?php include ('includes/footer.php'); ?>
