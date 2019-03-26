@@ -209,7 +209,7 @@ footer{
 	height:100%;
 	color:#353535;
 }
-
+	
 /*Contact form*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
@@ -308,3 +308,30 @@ li {
 .social {
   position: center;
 }
+
+/*Shop Page*/
+
+#menu_txt{
+	margin-left: 30px;
+	margin-right: 30px;
+
+}
+
+
+#merch_menu{
+	
+}
+#cap{
+	height: 250px;
+	width: 250px;
+}
+#beanie{
+	height: 250px;
+	width: 250px;
+	
+}
+#card_holder{
+	height: 250px;
+	width: 250px;
+}
+
