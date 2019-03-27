@@ -11,7 +11,7 @@ function initMap() {
     // Create a custom marker icon.
 
     var image = {
-        url: "http://i64.tinypic.com/jpvvkh.png",
+        url: "./img/GGs_transparent.png",
         scaledSize: new google.maps.Size(25, 25)
     };
 
