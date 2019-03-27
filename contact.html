@@ -15,6 +15,7 @@
 	<!--Check out https://fontawesome.com/ for social media icons-->
 	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <script charset="utf-8" src="js/main.js"></script>
+   
   </head>
   <body>
 	<nav id="main_nav">
@@ -32,7 +33,31 @@
 		</ul>
 	</nav>
 	<div class="footer_wrapper">
+
+
 	<!--Start Content-->
+
+	<!-- Google Map -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+		<h2>Google Maps with Markers</h2>
+		<div id="description">The maps show all our locations, if you would like to know what day we are where, please select from the dropdown menu</div>
+		<div id="dropdown">
+		  <select id="locations" onchange="filterLocations(this.value);">
+		    <option value="">-- All days --</option>
+		    <option value="Wednesday">Wednesday</option>
+		    <option value="Thursday">Thursday</option>
+		    <option value="Saturday">Saturday</option>
+		    <option value="Sunday">Sunday</option>
+		  </select>
+		</div>
+		<p>
+		  <div id="map"></div>
+
+		 
+
+
+	<!-- Contact Form -->
 	<header class="ccheader">
 		<h1>Contact Us</h1>	
 	</header>
@@ -40,7 +65,11 @@
 		<form method="post" action="" class="ccform">
 		<div class="ccfield-prepend">
 			<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-			<input class="ccformfield" type="text" placeholder="Full Name" required>
+			<input class="ccformfield" type="text" placeholder="First Name" required>
+		</div>
+		<div class="ccfield-prepend">
+			<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+			<input class="ccformfield" type="text" placeholder="Surname" required>
 		</div>
 		<div class="ccfield-prepend">
 			<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
@@ -58,6 +87,7 @@
 			<span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
 			<textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
 		</div>
+		
 		<div class="ccfield-prepend">
 			<input class="ccbtn" type="submit" value="Submit">
 		</div>
@@ -100,5 +130,10 @@
 			</div>
 		</footer>
 	</div><!--End of Wrapper-->
+
+		  <script async defer 
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8MOo41KhNnGLggRLBP39n6dW4T5vi4Es&callback=initMap">
+		  </script>
+	 
 	</body>
 </html>
