@@ -346,17 +346,9 @@ li {
 }
 
 	
-#cap{
+.merch_items{
 	height: 250px;
 	width: 250px;
-}
-#beanie{
-	height: 250px;
-	width: 250px;
-	
-}
-#card_holder{
-	height: 250px;
-	width: 250px;
+	transform: rotate(90deg);
 }
 
