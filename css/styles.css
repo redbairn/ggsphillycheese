@@ -209,7 +209,57 @@ footer{
 	height:100%;
 	color:#353535;
 }
-	
+
+/*contactPage Css*/
+
+/*Google Map*/
+
+/* Set display preferences for description. */
+
+#description {
+  margin: 10px 5% 0% 5%;
+  font-family: 'Gotham', 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.45em;
+}
+
+/* Set display preferences for dropdown menu. */
+
+#dropdown {
+  margin-top: 10px;
+  text-align: center;
+}
+
+select { 
+  height: 25px;
+  width: 150px;
+  font-family: 'Gotham', 'Montserrat', sans-serif;
+  text-align-last: center;
+}
+
+/* Set display preferences for map. */
+
+#map {
+  height: 65%;
+}
+
+/* Hide 'Google Maps API's Terms of Use'. */
+
+.gmnoprint a,
+.gmnoprint span,
+.gmnoprint.gm-style-cc,
+.gm-style-cc {
+  display: none !important;
+}
+
+/* Set background color of zoom buttons. */
+
+.gmnoprint div {
+  background: #EEEEEE !important;
+}
+
+
 /*Contact form*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
@@ -329,16 +379,14 @@ li {
 }
 
 #menu_txt{
-	font-family: 'kg-noregrets.ketch'; 
+	font-family: "kg-noregrets.ketch"; 
 	color: white;
-	
-	
+	letter-spacing: 2px;
 	margin-left: 30px;
 	margin-right: 30px;
-
 }
 @font-face {
-	font-family:'kg-noregrets.ketch';
+	font-family:"kg-noregrets.ketch";
 	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 }
 
@@ -361,7 +409,6 @@ li {
 	border-style: solid;
 }
 
-	
 .merch_img{
 	height: 250px;
 	width: 250px;
@@ -375,5 +422,6 @@ li {
 #card_holder{
 	height: 250px;
 	width: 250px;
+	transform: rotate(90deg);
 }
 
