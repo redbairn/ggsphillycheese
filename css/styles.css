@@ -311,16 +311,39 @@ li {
 
 /*Shop Page*/
 
+#chalk_board{
+	display: grid;
+    min-height: 80%;
+	width: 80%;
+    grid-template-rows: auto 1fr auto;
+	background: black;
+	text-align:center;
+	margin-left:10%;
+	margin-top:10%;
+	border-color:#B85B14;
+	border-style: solid;
+}
 #menu_txt{
+	
+	font-family: 'kg-noregrets.ketch'; color: white;
+	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
+	
 	margin-left: 30px;
 	margin-right: 30px;
 
+}
+
+#menu_icon{
+	height: 150px;
+	width: 150px;
 }
 
 
 #merch_menu{
 	
 }
+
+	
 #cap{
 	height: 250px;
 	width: 250px;
