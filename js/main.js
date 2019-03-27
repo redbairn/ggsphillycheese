@@ -12,9 +12,11 @@ function initMap() {
     // Create a custom marker icon.
 
     var image = {
-        url: "./img/GGs_transparent.png",
+        url: "./img/locationicon.png",
         scaledSize: new google.maps.Size(25, 25)
     };
+    //locationicon
+    //./img/GGs_transparent.png"
 
     // Create an array of locations, all coordinates are  general ones from Google Maps.
 
@@ -100,7 +102,6 @@ function initMap() {
             if (properties.category == category || category.length === 0) {
                 properties.setVisible(true);
                 closeAllInfoWindows(map); // Hide all info windows when selection from dropdown menu changes.
-                 
             } else {
                 properties.setVisible(false);
             }
