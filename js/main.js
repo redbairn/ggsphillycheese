@@ -1,6 +1,9 @@
 // Nothing here yet
 
 
+
+
+
 // Contacts Page Jscript
 // Google Maps
 
@@ -20,23 +23,12 @@ function initMap() {
     var locations = [
         ["0", "Central Park, Sandyford", image, 53.270239, -6.203806, "Wednesday"],
         ["1", "Merrion Square", image, 53.339638, -6.249067, "Thursday"],
-        ["2", "Clontarf Red Stables", image, 53.369164, -6.175845 , "Saturday"],
-        ["3", "Herbert Park", image, 53.327474, -6.235316 , "Sunday"]
+        ["2", "Clontarf Red Stables", image, 34.0522, -118.2437, "Saturday"],
+        ["3", "Herbert Park", image, 33.7743, -117.9380, "Sunday"]
     ];
 
     // Create a map.
-    var map = new google.maps.Map(document.getElementById("map"), {
-        //dublin - 53.347861, -6.259329
-        // Set up options and styles for map.
-        center: {
-            lat: 53.347861,
-            lng: -6.259329
-        },
-        zoom: 11,
-        mapTypeControl: false, // Disable Map & Satellite Views.
-        streetViewControl: false, // Disable Street View.
-
-    });
+    
 
     // Loop through length of locations.
 
@@ -76,7 +68,7 @@ function initMap() {
             marker.setIcon(properties.icon);
         }
 
-    //     // Check for content property.
+        // Check for content property.
 
         google.maps.event.addListener(marker, "click", (function(marker, content) {
             return function() {
@@ -105,7 +97,7 @@ function initMap() {
         }
     }
 
-    // // Close all info windows and open only one that corresponds to when marker is clicked.
+    // Close all info windows and open only one that corresponds to when marker is clicked.
 
     function closeAllInfoWindows(map) {
         markers.forEach(function(marker) {
@@ -115,6 +107,17 @@ function initMap() {
 
     }
 
+var map = new google.maps.Map(document.getElementById("map"), {
+        //dublin - 53.347861, -6.259329
+        // Set up options and styles for map.
+        center: {
+            lat: 53.347861,
+            lng: -6.259329
+        },
+        zoom: 11,
+        mapTypeControl: false, // Disable Map & Satellite Views.
+        streetViewControl: false, // Disable Street View.
 
+    });
 
 }
