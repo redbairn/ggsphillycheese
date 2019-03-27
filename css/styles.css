@@ -324,13 +324,17 @@ li {
 	border-style: solid;
 }
 #menu_txt{
+	font-family: 'kg-noregrets.ketch'; 
+	color: white;
 	
-	font-family: 'kg-noregrets.ketch'; color: white;
-	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 	
 	margin-left: 30px;
 	margin-right: 30px;
 
+}
+@font-face {
+	font-family:'kg-noregrets.ketch';
+	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 }
 
 #menu_icon{
