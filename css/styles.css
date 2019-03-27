@@ -209,7 +209,6 @@ footer{
 	height:100%;
 	color:#353535;
 }
-<<<<<<< HEAD
 
 
 /*contactPage Css*/
@@ -242,11 +241,17 @@ select {
 
 /* Set display preferences for map. */
 
-#map {
+/* #map {
   height: 65%;
-/*  width: 40%;*/
-}
+  width: 40%;
+} */
 
+<<<<<<< HEAD
+
+
+=======
+
+>>>>>>> b67e4202b346155c2172750ee8cb941d603c7762
 /* Hide 'Google Maps API's Terms of Use'. */
 
 .gmnoprint a,
@@ -261,11 +266,6 @@ select {
 .gmnoprint div {
   background: #EEEEEE !important;
 }
-
-
-=======
-	
->>>>>>> fe476718a204c0330b009298b2067d3a27db2833
 /*Contact form*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
