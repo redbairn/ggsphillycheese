@@ -209,9 +209,6 @@ footer{
 	height:100%;
 	color:#353535;
 }
-<<<<<<< HEAD
-
-
 /*contactPage Css*/
 
 /*Google Map*/
@@ -243,9 +240,9 @@ select {
 /* Set display preferences for map. */
 
 #map {
-  height: 65%;
-/*  width: 40%;*/
-  position: 
+  height: 400px;
+  width:100%;
+ 
 }
 
 /* Hide 'Google Maps API's Terms of Use'. */
@@ -263,15 +260,10 @@ select {
   background: #EEEEEE !important;
 }
 
-
-=======
-	
->>>>>>> fe476718a204c0330b009298b2067d3a27db2833
 /*Contact form*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body {
-
   font-weight: 400;
   font-size: 1em;
   font-family: 'Lato', Arial, sans-serif;
