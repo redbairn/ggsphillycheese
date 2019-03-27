@@ -241,7 +241,11 @@ select {
 /* Set display preferences for map. */
 
 #map {
-  height: 65%;
+
+  height: 400px;
+  width:100%;
+ 
+
 }
 
 /* Hide 'Google Maps API's Terms of Use'. */

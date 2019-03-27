@@ -2,8 +2,6 @@
 
 
 
-
-
 // Contacts Page Jscript
 // Google Maps
 
@@ -14,7 +12,7 @@ function initMap() {
     // Create a custom marker icon.
 
     var image = {
-        url: "http://i64.tinypic.com/jpvvkh.png",
+        url: "./img/GGs_transparent.png",
         scaledSize: new google.maps.Size(25, 25)
     };
 
@@ -23,12 +21,23 @@ function initMap() {
     var locations = [
         ["0", "Central Park, Sandyford", image, 53.270239, -6.203806, "Wednesday"],
         ["1", "Merrion Square", image, 53.339638, -6.249067, "Thursday"],
-        ["2", "Clontarf Red Stables", image, 34.0522, -118.2437, "Saturday"],
-        ["3", "Herbert Park", image, 33.7743, -117.9380, "Sunday"]
+        ["2", "Clontarf Red Stables", image, 53.369157, -6.175849 , "Saturday"],
+        ["3", "Herbert Park", image,53.327458, -6.235408,  "Sunday"]
     ];
 
     // Create a map.
-    
+    var map = new google.maps.Map(document.getElementById("map"), {
+        //dublin - 53.347861, -6.259329
+        // Set up options and styles for map.
+        center: {
+            lat: 53.347861,
+            lng: -6.259329
+        },
+        zoom: 11,
+        mapTypeControl: false, // Disable Map & Satellite Views.
+        streetViewControl: false, // Disable Street View.
+
+    });
 
     // Loop through length of locations.
 
@@ -107,17 +116,6 @@ function initMap() {
 
     }
 
-var map = new google.maps.Map(document.getElementById("map"), {
-        //dublin - 53.347861, -6.259329
-        // Set up options and styles for map.
-        center: {
-            lat: 53.347861,
-            lng: -6.259329
-        },
-        zoom: 11,
-        mapTypeControl: false, // Disable Map & Satellite Views.
-        streetViewControl: false, // Disable Street View.
 
-    });
 
 }
