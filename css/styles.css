@@ -316,13 +316,18 @@ li {
     min-height: 80%;
 	width: 80%;
     grid-template-rows: auto 1fr auto;
-	background: black;
 	text-align:center;
 	margin-left:10%;
 	margin-top:10%;
-	border-color:#B85B14;
+	background-image: url("img/slate.jpg");
+	background-color: black;
+	border-color: white;
 	border-style: solid;
 }
+#yummy{
+	
+}
+
 #menu_txt{
 	font-family: 'kg-noregrets.ketch'; 
 	color: white;
@@ -337,20 +342,30 @@ li {
 	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 }
 
-#menu_icon{
+#menu_icon1{
 	height: 150px;
 	width: 150px;
 }
 
 
-#merch_menu{
-	
+.merch_menu{
+	display: grid;
+    min-height: 80%;
+	width: 80%;
+    grid-template-rows: auto 1fr auto;
+	grid-gap: 1%;
+	text-align:center;
+	margin-left:10%;
+	margin-top:10%;
+	background-color: white;
+	border-style: solid;
 }
 
 	
-#cap{
+.merch_img{
 	height: 250px;
 	width: 250px;
+	
 }
 #beanie{
 	height: 250px;
