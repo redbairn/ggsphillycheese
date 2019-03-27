@@ -209,6 +209,7 @@ footer{
 	height:100%;
 	color:#353535;
 }
+
 /*contactPage Css*/
 
 /*Google Map*/
@@ -240,9 +241,11 @@ select {
 /* Set display preferences for map. */
 
 #map {
+
   height: 400px;
   width:100%;
  
+
 }
 
 /* Hide 'Google Maps API's Terms of Use'. */
@@ -365,13 +368,18 @@ li {
     min-height: 80%;
 	width: 80%;
     grid-template-rows: auto 1fr auto;
-	background: black;
 	text-align:center;
 	margin-left:10%;
 	margin-top:10%;
-	border-color:#B85B14;
+	background-image: url("img/slate.jpg");
+	background-color: black;
+	border-color: white;
 	border-style: solid;
 }
+#yummy{
+	
+}
+
 #menu_txt{
 	font-family: "kg-noregrets.ketch"; 
 	color: white;
@@ -384,20 +392,31 @@ li {
 	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 }
 
-#menu_icon{
+#menu_icon1{
 	height: 150px;
 	width: 150px;
 }
 
 
-#merch_menu{
-	
+.merch_menu{
+	display: grid;
+    min-height: 80%;
+	width: 80%;
+    grid-template-rows: auto 1fr auto;
+	grid-gap: 1%;
+	text-align:center;
+	margin-left:10%;
+	margin-top:10%;
+	background-color: white;
+	border-style: solid;
 }
 
-	
 .merch_items{
 	height: 250px;
 	width: 250px;
 	transform: rotate(90deg);
+	align-items: center;
+	
 }
+
 
