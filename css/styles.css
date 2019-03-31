@@ -50,15 +50,15 @@ html, body{
   text-decoration: none;
 }
 /*_Dropdown-Nav*/
-#top_nav a {
-  text-decoration: none;
+/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
+#top_nav a:hover, a:active { 
+	color:white; 
 }
 #top_nav ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
-
 #top_nav li {
 	color: #fff;
 	display: block;
@@ -68,11 +68,6 @@ html, body{
 	text-decoration: none;
   transition-duration: 0.5s;
 }
-  
-#top_nav li a {
-  color: black;
-}
-
 #top_nav li:hover,
 #top_nav li:focus-within {
 	background: red;
@@ -366,7 +361,7 @@ img {
 } */
 
 .social {
-  position: center;
+	position: center;
 }
 
 /*Shop Page*/
@@ -405,9 +400,9 @@ img {
 	width: 150px;
 }
 #merchtxt{
-font-family: "lightout";
-letter-spacing: 2px;
-font-weight: bold;
+	font-family: "lightout";
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 @font-face{
 	font-family:"lightout";
