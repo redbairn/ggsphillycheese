@@ -21,7 +21,7 @@ html, body{
 
 
 /*Navigation*/
-nav{
+#top_nav{
 	display: flex;
 	width: 100%;
 	height:220px;
@@ -33,73 +33,76 @@ nav{
 	font-weight:700;
 }
 
-nav ul {
+#top_nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-nav li {
+#top_nav li {
   float: left;
 }
-nav li a {
+#top_nav li a {
   display: inline;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
-nav li a:hover:not(.active) {
-  background-color: #DCDCDC;
-}
-
-.active {
-  background-color: #4CAF50;
-}
 /*_Dropdown-Nav*/
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
+/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
+#top_nav a:hover, a:active { 
+	color:white; 
+}
+#top_nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#top_nav li {
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+#top_nav li:hover,
+#top_nav li:focus-within {
+	background: red;
+	cursor: pointer;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+#top_nav li:focus-within a {
+  outline: none;
 }
 
-li.dropdown {
-  display: inline-block;
+#top_nav ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+#top_nav ul li:hover > #top_nav ul,
+#top_nav ul li:focus-within >  #top_nav ul,
+#top_nav ul li ul:hover,
+#top_nav ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+#top_nav ul li ul li {
+	clear: both;
+  width: 100%;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 /*_Navigation Logo*/
- .navigation img {
-	 margin: 0 10px;
-}
 #logo{
 	margin:0;
 	padding:0;
@@ -209,12 +212,60 @@ footer{
 	height:100%;
 	color:#353535;
 }
-	
+
+/*contactPage Css*/
+
+/*Google Map*/
+
+/* Set display preferences for description. */
+
+#description {
+  margin: 10px 5% 0% 5%;
+  font-family: 'Gotham', 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.45em;
+}
+
+/* Set display preferences for dropdown menu. */
+
+#dropdown {
+  margin-top: 10px;
+  text-align: center;
+}
+
+select { 
+  height: 25px;
+  width: 150px;
+  font-family: 'Gotham', 'Montserrat', sans-serif;
+  text-align-last: center;
+}
+
+/* Set display preferences for map. */
+
+#map {
+  height: 65%;
+}
+
+/* Hide 'Google Maps API's Terms of Use'. */
+
+.gmnoprint a,
+.gmnoprint span,
+.gmnoprint.gm-style-cc,
+.gm-style-cc {
+  display: none !important;
+}
+
+/* Set background color of zoom buttons. */
+
+.gmnoprint div {
+  background: #EEEEEE !important;
+}
+
 /*Contact form*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body {
-
   font-weight: 400;
   font-size: 1em;
   font-family: 'Lato', Arial, sans-serif;
@@ -295,18 +346,18 @@ img {
   width: 32px;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0px;
-}
-li {
+} */
+/* li {
   display: inline;
   margin-right: 10px;
-}
+} */
 
 .social {
-  position: center;
+	position: center;
 }
 
 /*Shop Page*/
@@ -316,45 +367,69 @@ li {
     min-height: 80%;
 	width: 80%;
     grid-template-rows: auto 1fr auto;
-	background: black;
 	text-align:center;
 	margin-left:10%;
 	margin-top:10%;
-	border-color:#B85B14;
+	background-image: url("img/slate.jpg");
+	background-color: black;
+	border-color: white;
 	border-style: solid;
 }
-#menu_txt{
+#yummy{
 	
-	font-family: 'kg-noregrets.ketch'; color: white;
-	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
-	
-	margin-left: 30px;
-	margin-right: 30px;
-
 }
 
-#menu_icon{
+#menu_txt{
+	font-family: "kg-noregrets.ketch"; 
+	color: white;
+	letter-spacing: 2px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+@font-face {
+	font-family:"kg-noregrets.ketch";
+	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
+}
+
+#menu_icon1{
 	height: 150px;
 	width: 150px;
 }
+#merchtxt{
+	font-family: "lightout";
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+@font-face{
+	font-family:"lightout";
+	src:url("fonts/lightout.ttf") format("truetype");
+}
 
+.merch_menu{
+	display: grid;
+    min-height: 80%;
+	width: 80%;
+    grid-template-columns: auto;
+	grid-gap:40%;
+	
+	text-align:center;
+	margin-left:10%;
+	margin-top:10%;
+	margin-bottom:10%;
+	background-color: white;
+	border-style: solid;
+}
 
-#merch_menu{
+.merch_items{
+	height: 150px;
+	width: 150px;
+	transform: rotate(90deg);
+	
 	
 }
 
-	
-#cap{
-	height: 250px;
-	width: 250px;
+.button{
+	margin-bottom:10%;
 }
-#beanie{
-	height: 250px;
-	width: 250px;
-	
-}
-#card_holder{
-	height: 250px;
-	width: 250px;
-}
+
 

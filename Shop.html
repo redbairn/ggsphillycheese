@@ -17,25 +17,30 @@
     <script charset="utf-8" src="js/main.js"></script>
   </head>
   <body>
-	<nav id="main_nav">
-		<ul class="navigation">
+	<nav role="navigation" id="top_nav">
+		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="shop.html">Shop</a></li>
 		</ul>	
 		<div id="logo">
 			<img id="logo_img" src="img/GGs_transparent.png" />
 			<h1 id="logo_text">GG'S PHILLY CHEESE</h1>
 		</div>
-		<ul class="navigation">
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="shop.html">Shop</a></li>
+		<ul>
+			<li><a href="#" aria-haspopup="true">About</a>
+				<ul class="dropdown" aria-label="submenu">
+					<li><a href="blog.php">Blog</a></li>
+					<li><a href="#">Review</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 	<div class="footer_wrapper">
 		<div id="chalk_board">
 			<div id="menu_txt">
 				<h1>"The best Philly cheese this side of the Atlantic"</h1>
-					<img id="menu_icon" src="img/menu_icon.png"/>
+					<img id="menu_icon1" src="img/menu_icon1.png"/>
 					<h3>Philly Cheesesteak Sandwich 8.50</h3>
 						<div id="yummy">
 						<p>A 7.5" soft cub roll with melt in the mouth tender steak,
@@ -44,8 +49,6 @@
 					<h4>Add Jalepeños or Mushrooms (Free)</h4>
 				<h3>Drinks 1.50</h3>
 					<p>Coke, 7up, Fanta, Water.</p>
-			<!--</div>
-			<div id="locations">-->
 				<h3>Wednesday - Central Park Sandyford: 11am - 2pm
 				<br><br>
 				Thursday - Merrion Square: 11am - 3pm
@@ -57,15 +60,23 @@
 			</div>
 	
 	
-	<div id="merch_menu">
-	<h2>Merch</h2>
-		<img id="cap" src="img/flatpeak.jpeg"/>
-		<h4>Flat Peak adjustable cap</h4>
-		<img id="beanie" src="img/beanie.jpeg"/>
-		<h4>Bear Beanie</h4>
-		<img id="card_holder" src="img/card_holder.jpeg"/>
-		<h4>Card Holder</h4>
+	<div class="merch_menu">
+		<div class="merch">
+			<h1 id="merchtxt">GG's Gear</h1>
+		
+			<h3 id="merchtxt">Flat Peak (adjustable)</h3>
+				<img class="merch_items"src="img/flatpeak.jpeg"/>
+					<input type="image" class="button" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				
+			<h3 id="merchtxt">Bear Beanie (one-size)</h3>
+				<img class="merch_items"src="img/beanie.jpeg"/>
+					<input type="image" class="button" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				
+			<h3 id="merchtxt">Card Holder (phone)</h3>	
+				<img class="merch_items" src="img/card_holder.jpeg"/>
+					<input type="image" class="button" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
 
+		</div>
 	</div>
 
 	<footer>
