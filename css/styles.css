@@ -21,7 +21,7 @@ html, body{
 
 
 /*Navigation*/
-nav{
+#top_nav{
 	display: flex;
 	width: 100%;
 	height:220px;
@@ -33,73 +33,76 @@ nav{
 	font-weight:700;
 }
 
-nav ul {
+#top_nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-nav li {
+#top_nav li {
   float: left;
 }
-nav li a {
+#top_nav li a {
   display: inline;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
-nav li a:hover:not(.active) {
-  background-color: #DCDCDC;
-}
-
-.active {
-  background-color: #4CAF50;
-}
 /*_Dropdown-Nav*/
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
+/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
+#top_nav a:hover, a:active { 
+	color:white; 
+}
+#top_nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#top_nav li {
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+#top_nav li:hover,
+#top_nav li:focus-within {
+	background: red;
+	cursor: pointer;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+#top_nav li:focus-within a {
+  outline: none;
 }
 
-li.dropdown {
-  display: inline-block;
+#top_nav ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+#top_nav ul li:hover > #top_nav ul,
+#top_nav ul li:focus-within >  #top_nav ul,
+#top_nav ul li ul:hover,
+#top_nav ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+#top_nav ul li ul li {
+	clear: both;
+  width: 100%;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 /*_Navigation Logo*/
- .navigation img {
-	 margin: 0 10px;
-}
 #logo{
 	margin:0;
 	padding:0;
@@ -343,18 +346,18 @@ img {
   width: 32px;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0px;
-}
-li {
+} */
+/* li {
   display: inline;
   margin-right: 10px;
-}
+} */
 
 .social {
-  position: center;
+	position: center;
 }
 
 /*Shop Page*/
@@ -393,9 +396,9 @@ li {
 	width: 150px;
 }
 #merchtxt{
-font-family: "lightout";
-letter-spacing: 2px;
-font-weight: bold;
+	font-family: "lightout";
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 @font-face{
 	font-family:"lightout";

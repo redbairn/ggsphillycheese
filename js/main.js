@@ -12,14 +12,16 @@ function initMap() {
     // Create a custom marker icon.
 
     var image = {
-        url: "./img/GGs_transparent.png",
+        url: "./img/locationicon.png",
         scaledSize: new google.maps.Size(25, 25)
     };
+    //locationicon
+    //./img/GGs_transparent.png"
 
     // Create an array of locations, all coordinates are  general ones from Google Maps.
 
     var locations = [
-        ["0", "Central Park, Sandyford", image, 53.270239, -6.203806, "Wednesday"],
+        ["0", "Central Park, Sandyford \n this is a new line", image, 53.270239, -6.203806, "Wednesday"],
         ["1", "Merrion Square", image, 53.339638, -6.249067, "Thursday"],
         ["2", "Clontarf Red Stables", image, 53.369157, -6.175849 , "Saturday"],
         ["3", "Herbert Park", image,53.327458, -6.235408,  "Sunday"]
@@ -57,7 +59,7 @@ function initMap() {
         // Set up info window when marker is clicked.
 
         var infoWindow = new google.maps.InfoWindow({
-            content: ""
+            content: "This is content"
         });
 
         var marker = new google.maps.Marker({
