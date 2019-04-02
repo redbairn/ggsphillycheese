@@ -14,9 +14,10 @@
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <script charset="utf-8" src="js/main.js"></script>
-   
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   </head>
-  <body>
+  <body class="site">
+  <main class="site-content">
 	<nav role="navigation" id="top_nav">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -36,96 +37,102 @@
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="footer_wrapper">
-
-
+	<div class="content_wrapper">
+	
+		
+		
+		
 	<!--Start Content-->
-
 	<!-- Google Map -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<div class="col-1"></div>
+	<div class="col-2">
+		
 
 		<h2>Google Maps with Markers</h2>
 		<div id="description">The maps show all our locations, if you would like to know what day we are where, please select from the dropdown menu</div>
 		<div id="dropdown">
 		  <select id="locations" onchange="filterLocations(this.value);">
-		    <option value="">-- All --</option>
-		    <option value="Wednesday">Wednesday 11am-2pm</option>
-		    <option value="Thursday">Thursday 11am-3pm</option>
-		    <option value="Saturday">Saturday 10am-4pm</option>
-		    <option value="Sunday">Sunday 10am-4pm</option>
+			<option value="">-- All --</option>
+			<option value="Wednesday">Wednesday 11am-2pm</option>
+			<option value="Thursday">Thursday 11am-3pm</option>
+			<option value="Saturday">Saturday 10am-4pm</option>
+			<option value="Sunday">Sunday 10am-4pm</option>
 		  </select>
 		</div>
 		<p>
+		<!--Google Map-->
+		<div id="map"></div>
 
-		  <div id="map"></div>
-
-	<!-- Contact Form -->
-	<header class="ccheader">
-		<h1>Contact Us</h1>	
-	</header>
-	<div class="wrapper">
-		<form method="post" action="" class="ccform">
-		<div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-			<input class="ccformfield" type="text" placeholder="First Name" required>
-		</div>
-		<div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-			<input class="ccformfield" type="text" placeholder="Surname" required>
-		</div>
-		<div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-			<select class="ccformfield">
-			<option value="" >-- Please Select if Needed --</option>
-			<option value="Cereals containing gluten" >Cereals containing gluten</option>
-			<option value="Crustaceans and products thereof" >Crustaceans and products thereof</option>
-			<option value="Eggs and products thereof" >Eggs and products thereof</option>
-			<option value="Fish and products thereof" >Fish and products thereof</option>
-			<option value="Peanuts and products thereof" >Peanuts and products thereof</option>
-			<option value="Soybeans and products thereof" >Soybeans and products thereof</option>
-			<option value="Milk and products thereof (including lactose)" >Milk and products thereof (including lactose)</option>
-			<option value="Nuts" >Nuts</option>
-			<option value="Celery and products thereof" >Celery and products thereof</option>
-			<option value="Mustard and products thereof" >Mustard and products thereof</option>
-			<option value="Sesame seeds and products thereof" >Sesame seeds and products thereof</option>
-			<option value="Sulphur dioxide and sulphites" >Sulphur dioxide and sulphites</option>
-			<option value="Lupin" >Lupin</option>
-			<option value="Molluscs" >Molluscs</option>
-			<option value="Other" >Other</option>
-		</select>
-		</div>
-		<div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-			<input class="ccformfield" type="text" placeholder="Email" required>
-		</div>
-		<div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
-			<input class="ccformfield" type="text" placeholder="Phone">
-		</div>
-		 <div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
-			<input class="ccformfield" type="text" placeholder="Subject" required>
-		</div>
-		<div class="ccfield-prepend">
-			<span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
-			<textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
-		</div>
-		
-		<div class="ccfield-prepend">
-			<input class="ccbtn" type="submit" value="Submit">
-		</div>
-		</form>
-	</div>
-	<!--End Content-->
+		<!-- Contact Form -->
+		<header class="ccheader">
+			<h1>Contact Us</h1>	
+		</header>
+		<div class="contact_wrapper">
+			<form method="post" action="" class="ccform">
+			<div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+				<input class="ccformfield" type="text" placeholder="First Name" required>
+			</div>
+			<div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+				<input class="ccformfield" type="text" placeholder="Surname" required>
+			</div>
+			<div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+				<select class="ccformfield">
+				<option value="" >-- Please Select if Needed --</option>
+				<option value="Cereals containing gluten" >Cereals containing gluten</option>
+				<option value="Crustaceans and products thereof" >Crustaceans and products thereof</option>
+				<option value="Eggs and products thereof" >Eggs and products thereof</option>
+				<option value="Fish and products thereof" >Fish and products thereof</option>
+				<option value="Peanuts and products thereof" >Peanuts and products thereof</option>
+				<option value="Soybeans and products thereof" >Soybeans and products thereof</option>
+				<option value="Milk and products thereof (including lactose)" >Milk and products thereof (including lactose)</option>
+				<option value="Nuts" >Nuts</option>
+				<option value="Celery and products thereof" >Celery and products thereof</option>
+				<option value="Mustard and products thereof" >Mustard and products thereof</option>
+				<option value="Sesame seeds and products thereof" >Sesame seeds and products thereof</option>
+				<option value="Sulphur dioxide and sulphites" >Sulphur dioxide and sulphites</option>
+				<option value="Lupin" >Lupin</option>
+				<option value="Molluscs" >Molluscs</option>
+				<option value="Other" >Other</option>
+			</select>
+			</div>
+			<div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+				<input class="ccformfield" type="text" placeholder="Email" required>
+			</div>
+			<div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+				<input class="ccformfield" type="text" placeholder="Phone">
+			</div>
+			 <div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+				<input class="ccformfield" type="text" placeholder="Subject" required>
+			</div>
+			<div class="ccfield-prepend">
+				<span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
+				<textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+			</div>
+			
+			<div class="ccfield-prepend">
+				<input class="ccbtn" type="submit" value="Submit">
+			</div>
+			</form>
+		</div><!--End of Contact Wrapper-->
+	</div><!--End of Col-2-->
+	<div class="col-3"></div>	
 <!-- <script>
 	   $(document).ready(function() {
       $("#form").validate();
    });
 </script> -->
+	</div><!--End of Content Wrapper-->
+	</main><!--End of Main-->
 		<footer>
-			<div class="footer_container">
+			<div class="footer_wrapper">
 				<!--Social Icons-->
-				<div class="footer_content_l">
+				<div class="col-1 footer_content">
 					<p>Follow Us</p>
 					<a href="https://www.facebook.com/GGsphillycheese/"> 
 						<span data-balloon="size: 2x" data-balloon-pos="up" class="db color-inherit link hover-pink">
@@ -138,12 +145,12 @@
 					 </span>
 					</a>
 				</div>
-				<div class="footer_content_c">
+				<div class="col-2 footer_content">
 					<div class="headerDivider1"></div>
 					<p>Created by:</p>
 					<p>TeamB, Web Design @ NCI (2019).</p>
 				</div>
-				<div class="footer_content_r">
+				<div class="col-3 footer_content">
 					<div class="headerDivider2"></div>
 					<p>
 						Contact Us
@@ -154,10 +161,8 @@
 						</span>
 					</a>
 				</div>
-			</div>
+			</div><!--End of Footer Wrapper-->
 		</footer>
-	</div><!--End of Wrapper-->
-
 		  <script async defer 
 		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8MOo41KhNnGLggRLBP39n6dW4T5vi4Es&callback=initMap">
 		  </script>

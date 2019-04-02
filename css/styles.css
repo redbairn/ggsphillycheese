@@ -14,11 +14,26 @@ html, body{
 }
 
 /*Content*/
-
-
-
-
-
+.content_wrapper {
+	display: grid;
+    height: auto;
+	margin-left:20%;
+	margin-right:20%;
+    grid-template-rows: 20% 60% 20%;
+	background: #F5842E;  /*Old f29107*/
+	text-align:center;
+	border-color:#B85B14;
+	border-style: solid;
+}
+.col-1 {
+  grid-column-start: 1;
+}
+.col-2 {
+  grid-column-start: 2;
+}
+.col-3 {
+  grid-column-start: 3;
+}
 
 /*Navigation*/
 #top_nav{
@@ -167,50 +182,63 @@ footer{
 }
 
 /*_Sticky Footer*/
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  height: 100%; 
+}
+.Site-header,
+.Site-footer {
+  flex: none; /* 2 */
+}
+
+.Site-content {
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+.Site-content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+
+
+/*_Footer Wrapper*/
 .footer_wrapper {
-	display: grid;
+	display:grid;
     min-height: 100%;
-	width: 50%;
-    grid-template-rows: auto 1fr auto;
+	margin-left: 20%;
+    margin-right: 20%;
+    grid-template-rows: 20% 60% 20%;
 	background: #F5842E;  /*Old f29107*/
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight:700;
+	height:100%;
+	color:#353535;
 	text-align:center;
-	margin-left:25%;
 	border-color:#B85B14;
 	border-style: solid;
 }
-.footer_container a:visited { 
+.footer_wrapper a:visited { 
 	text-decoration: none; 
 	color:#353535; 
 }
-.footer_container a:hover, a:active { 
+.footer_wrapper a:hover, a:active { 
 	text-decoration: none; 
 	color:red; 
 }
-.footer_container a { 
+.footer_wrapper a { 
 	color:#353535; 
 	text-decoration: none;
 }
 
 
-.footer_content_l{
+.footer_content{
 	text-align:center;
-/* 	border-color:#6E6E6E;
-	border-style: solid; */
-	height:100%;
-}
-.footer_content_c{
-	text-align:center;
-}
-.footer_content_r{
-	text-align:center;
-}
-.footer_container{
-	display: grid;
-	grid-template-columns: 25% 50% 25%;
-  	font-family: 'Lato', Arial, sans-serif;
-	font-weight:700;
-	height:100%;
-	color:#353535;
 }
 
 /*contactPage Css*/
@@ -244,7 +272,7 @@ select {
 /* Set display preferences for map. */
 
 #map {
-  height: 65%;
+  height: 100%;
 }
 
 /* Hide 'Google Maps API's Terms of Use'. */
@@ -254,6 +282,10 @@ select {
 .gmnoprint.gm-style-cc,
 .gm-style-cc {
   display: none !important;
+}
+
+.contact_wrapper{
+	padding:1%;
 }
 
 /* Set background color of zoom buttons. */
@@ -273,11 +305,6 @@ body {
   padding:0;
   padding-bottom:60px;
 }
-
-/*.wrapper {
-  width: 25%;
-}*/
-
 .ccheader {
   margin: 0 auto;
   padding: 2em;
