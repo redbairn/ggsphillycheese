@@ -70,7 +70,7 @@ html, body{
 }
 #top_nav li:hover,
 #top_nav li:focus-within {
-	background: red;
+	background: #F5842E;
 	cursor: pointer;
 }
 
@@ -376,7 +376,7 @@ img {
 	border-style: solid;
 }
 #yummy{
-	
+
 }
 
 #menu_txt{
@@ -400,6 +400,7 @@ img {
 	letter-spacing: 2px;
 	font-weight: bold;
 }
+
 @font-face{
 	font-family:"lightout";
 	src:url("fonts/lightout.ttf") format("truetype");
@@ -423,13 +424,21 @@ img {
 .merch_items{
 	height: 150px;
 	width: 150px;
-	transform: rotate(90deg);
-	
 	
 }
 
 .button{
 	margin-bottom:10%;
 }
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+#menu_txt{
+}
+#yummy{
+	
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
 
 
