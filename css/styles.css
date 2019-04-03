@@ -4,6 +4,15 @@
 * Date: 2019/03/23
 **************************************************************************************/
 
+/*for 700px or less*/
+@media screen and (max-width: 700px) {
+	.nomobile{
+		display:none;
+	}
+
+	
+}
+
 /*Large Desktop screens*/
 @media only screen and (max-width: 1920px){
 	/*Body*/
@@ -373,15 +382,16 @@
 		width: 80%;
 		grid-template-rows: auto 1fr auto;
 		text-align:center;
-		margin-left:10%;
+		margin-left:15%;
 		margin-top:10%;
 		background-image: url("img/slate.jpg");
 		background-color: black;
 		border-color: white;
 		border-style: solid;
 	}
-	#yummy{
-		
+	
+	#toppings{
+		change to pragraph font
 	}
 
 	#menu_txt{
@@ -396,7 +406,7 @@
 		src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 	}
 
-	#menu_icon1{
+	#menu_icon{
 		height: 150px;
 		width: 150px;
 	}
@@ -803,9 +813,6 @@ img {
 	border-color: white;
 	border-style: solid;
 }
-#yummy{
-
-}
 
 #menu_txt{
 	font-family: "kg-noregrets.ketch"; 
@@ -818,11 +825,15 @@ img {
 	font-family:"kg-noregrets.ketch";
 	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 }
-
+/*
+#menu_icon{
+	display:none;
+}
 #menu_icon1{
 	height: 150px;
 	width: 150px;
 }
+*/
 #merchtxt{
 	font-family: "lightout";
 	letter-spacing: 2px;
@@ -834,13 +845,23 @@ img {
 	src:url("fonts/lightout.ttf") format("truetype");
 }
 
+.product1{
+	float:left;
+}
+.product2{
+	float:right;
+}
+.product3{
+	align-self: normal;
+}
+
+
 .merch_menu{
 	display: grid;
     min-height: 80%;
 	width: 80%;
     grid-template-columns: auto;
-	grid-gap:40%;
-	
+	grid-gap:10%;
 	text-align:center;
 	margin-left:10%;
 	margin-top:10%;
@@ -859,14 +880,12 @@ img {
 	margin-bottom:10%;
 }
 
+
+
 /* for 700px or less 
 @media screen and (max-width: 700px) {
 #menu_txt{
 }
-#yummy{
-	
-}
-/* for 480px or less 
-@media screen and (max-width: 480px) {
 
+	
 }*/
