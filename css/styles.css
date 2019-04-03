@@ -406,8 +406,8 @@
 		src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
 	}
 
-	#menu_icon{
-		height: 150px;
+	#GGmenu{
+		height: auto;
 		width: 150px;
 	}
 	#merchtxt{
