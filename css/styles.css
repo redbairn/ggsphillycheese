@@ -428,7 +428,6 @@
 	.merch_items{
 		height: 150px;
 		width: 150px;
-		transform: rotate(90deg);
 		
 		
 	}
@@ -860,14 +859,14 @@ img {
 	margin-bottom:10%;
 }
 
-/* for 700px or less */
+/* for 700px or less 
 @media screen and (max-width: 700px) {
 #menu_txt{
 }
 #yummy{
 	
 }
-/* for 480px or less */
+/* for 480px or less 
 @media screen and (max-width: 480px) {
 
-
+}*/
