@@ -1,7 +1,3 @@
-// Nothing here yet
-
-
-
 // Contacts Page Jscript
 // Google Maps
 
