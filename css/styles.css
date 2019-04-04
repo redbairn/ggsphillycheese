@@ -19,6 +19,17 @@
 /*XXLarge screens*/
 @media screen and (min-width: 140em) { 
 }/* min-width 2240px, xxlarge screens - Full HD+ */
+
+
+/*for 700px or less*/
+@media screen and (max-width: 700px) {
+	.nomobile{
+		display:none;
+	}
+}
+/*Large Desktop screens*/
+@media only screen and (max-width: 1920px){
+}
 	/*Body*/
 	body {
 	  font-weight: 400;
@@ -29,23 +40,9 @@
 	  padding-bottom:60px;
 	  background-color: #E6E6E6;
 	}
-	html, body{
-	  height: 100%;
-	}
+	
+	
 
-	/*Content*/
-	.col-1 {
-	  grid-column-start: 1;
-	}
-	.col-2 {
-	  grid-column-start: 2;
-	}
-	.col-3 {
-	  grid-column-start: 3;
-	}
-	
-	
-	
 	/*Homepage*/
 	.main {
 		font-weight: 400;
@@ -489,11 +486,12 @@
 	  padding-bottom:60px;
 	  background-color: #E6E6E6;
 	}
-	html, body{
+
 	  height: 100%;
 	}
 
 	/*Content*/
+
 	.col-1 {
 	  grid-column-start: 1;
 	}
@@ -503,6 +501,7 @@
 	.col-3 {
 	  grid-column-start: 3;
 	}
+	
 	
 	
 	
@@ -874,7 +873,6 @@
 		border-color: white;
 		border-style: solid;
 	}
-	
 
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
@@ -927,72 +925,20 @@
 	.button{
 		margin-bottom:10%;
 	}
-} /* min-width 1600px and max-width 1920px, use when QAing xlarge screen-only issues */
 
-/***********/
-/*DESKTOPS*/
-/*********/
 
-/*XLarge screens (1441px-1600px)*/
-@media screen and (min-width: 90.063em) and (max-width: 100em) { 
-	/*Add styles here*/
-}/* min-width 1441px and max-width 1600px, use when QAing xlarge screen-only issues */
 
-/**********/
-/*LAPTOPS*/
-/********/
 
-/*Large screens*/
-@media screen and (min-width: 64.063em) and (max-width: 90em) { 
-	/*Add styles here*/
-} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
-/**********/
-/*TABLETS*/
-/********/
 
-/*Medium screens*/
-@media screen and (min-width: 40.063em) and (max-width: 64em) { 
-	/*Add styles here*/
-}/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-/**********/
-/*MOBILE**/
-/********/
 
-/*Larger Mobile Screens*/
-@media screen and (min-width: 30em) and (max-width: 40.063em) { 
-	/*Add styles here*/
-	.nomobile{
-		display:none;
-	}
+
+
+/* for 700px or less 
+@media screen and (max-width: 700px) {
+#menu_txt{
 }
 
-/*LANDSCAPE (Large Smart Phones)*/
-@media screen and (min-width: 30em) and (max-width: 40.063em) and (orientation: landscape) { 
-	/*Add styles here*/
-	.nomobile{
-		display:none;
-	}
-}
-
-/*Smaller Mobile Screens*/
-@media screen and (max-width: 30em) { 
-	/*Add styles here*/
-	.nomobile{
-		display:none;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+}*/
