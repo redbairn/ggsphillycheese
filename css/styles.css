@@ -18,6 +18,7 @@
 /****************/
 /*XXLarge screens*/
 @media screen and (min-width: 140em) { 
+}/* min-width 2240px, xxlarge screens - Full HD+ */
 	/*Body*/
 	body {
 	  font-weight: 400;
@@ -406,9 +407,8 @@
 		width: 80%;
 		grid-template-rows: auto 1fr auto;
 		text-align:center;
-		margin-left:15%;
+		margin-left:10%;
 		margin-top:10%;
-		background-image: url("img/slate.jpg");
 		background-color: black;
 		border-color: white;
 		border-style: solid;
@@ -467,7 +467,7 @@
 	.button{
 		margin-bottom:10%;
 	}
-}/* min-width 2240px, xxlarge screens - Full HD+ */
+
 
 /******************/
 /*HI-DEF DESKTOPS*/
@@ -874,6 +874,7 @@
 		border-color: white;
 		border-style: solid;
 	}
+	
 
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
