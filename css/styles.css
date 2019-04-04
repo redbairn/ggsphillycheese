@@ -84,16 +84,6 @@
 		font-family: 'Lato', Arial, sans-serif;
 		font-weight:700;
 	}
-
-	#top_nav ul{
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	}
-	#top_nav li {
-	  float: left;
-	}
 	#top_nav li a {
 	  display: inline;
 	  color: black;
@@ -107,6 +97,7 @@
 		color:white; 
 	}
 	#top_nav ul {
+		background: darkorange;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -118,7 +109,7 @@
 		padding: 1rem;
 		position: relative;
 		text-decoration: none;
-	  transition-duration: 0.5s;
+		transition-duration: 0.5s;
 	}
 	#top_nav li:hover,
 	#top_nav li:focus-within {
@@ -141,8 +132,8 @@
 		display: none;
 	}
 
-	#top_nav ul li:hover > #top_nav ul,
-	#top_nav ul li:focus-within >  #top_nav ul,
+	#top_nav ul li:hover > ul,
+	#top_nav ul li:focus-within >  ul,
 	#top_nav ul li ul:hover,
 	#top_nav ul li ul:focus {
 	   visibility: visible;
@@ -152,7 +143,7 @@
 
 	#top_nav ul li ul li {
 		clear: both;
-	  width: 100%;
+		width: 100%;
 	}
 	/*_Navigation Logo*/
 	#logo{
