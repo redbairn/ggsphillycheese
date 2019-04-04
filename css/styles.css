@@ -866,7 +866,7 @@
 		width: 80%;
 		grid-template-rows: auto 1fr auto;
 		text-align:center;
-		margin-left:15%;
+		margin-left:10%;
 		margin-top:10%;
 		background-image: url("img/slate.jpg");
 		background-color: black;
