@@ -9,10 +9,7 @@
 	.nomobile{
 		display:none;
 	}
-
-	
 }
-
 /*Large Desktop screens*/
 @media only screen and (max-width: 1920px){
 	/*Body*/
@@ -415,11 +412,6 @@
 		border-color: white;
 		border-style: solid;
 	}
-	
-	/*#toppings{
-		
-	}change to pragraph font*/
-
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
