@@ -1,3 +1,15 @@
+function myHandlebar() {
+  var x = document.getElementById("top_nav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+
 // Contacts Page Jscript
 // Google Maps
 

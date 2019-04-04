@@ -18,7 +18,7 @@
   </head>
   <body>
 	<header>
-		<nav role="navigation" id="top_nav">
+		<nav role="navigation" id="top_nav" class="topnav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="shop.html">Shop</a></li>
@@ -29,15 +29,22 @@
 			</div>
 			<ul>
 				<li><a href="#" aria-haspopup="true">About</a>
+					<i class="fa fa-caret-down"></i>
 					<ul class="dropdown" aria-label="submenu">
 						<li><a href="blog/index.php">Blog</a></li>
 						<li><a href="#">Review</a></li>
 					</ul>
 				</li>
 				<li><a href="contact.html">Contact</a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="myHandlebar()">
+					<i class="fa fa-bars"></i>
+				</a></li>
 			</ul>
 		</nav>
 	</header>
+	
+	
+	
 	<div class="footer_wrapper">
 	<!--Start Content-->
 	<h1>About Us Header</h1>
