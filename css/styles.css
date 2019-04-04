@@ -2,19 +2,35 @@
 * Authors: Craig Bell, Philip Godkin, Ying Godkin, Kristan Johnson
 * Assignment: Web Design Project, National College of Ireland, 2019.
 * Date: 2019/03/23
-**************************************************************************************/
+*---------------------------------------------------------------------
+*1/-DESKTOPS
+*2/-LAPTOPS
+*3/-TABLETS
+*4/-MOBILE
+*************************************************************************************/
 
-/*for 700px or less*/
-@media screen and (max-width: 700px) {
-	.nomobile{
-		display:none;
-	}
+/***********/
+/*DESKTOPS*/
+/*********/
 
-	
-}
+/******************/
+/*HI-DEF DESKTOPS*/
+/****************/
+/*XXLarge screens*/
+@media screen and (min-width: 140em) { 
+	/*Add styles here*/
+}/* min-width 2240px, xxlarge screens - Full HD+ */
 
-/*Large Desktop screens*/
-@media only screen and (max-width: 1920px){
+/******************/
+/*HI-DEF DESKTOPS*/
+/****************/
+/*XXLarge screens*/
+@media screen and (min-width: 120.063em) and (max-width: 140em) { 
+	/*Add styles here*/
+} /* min-width 1921px and max-width 2240px, xxlarge screens - FHD (Full HD) */
+
+/*XLarge screens (1600px-1920px)*/
+@media screen and (min-width: 100em) and (max-width: 120em) { 
 	/*Body*/
 	body {
 	  font-weight: 400;
@@ -25,15 +41,11 @@
 	  padding-bottom:60px;
 	  background-color: #E6E6E6;
 	}
-	
-	
-	
 	html, body{
 	  height: 100%;
 	}
 
 	/*Content*/
-
 	.col-1 {
 	  grid-column-start: 1;
 	}
@@ -43,7 +55,6 @@
 	.col-3 {
 	  grid-column-start: 3;
 	}
-	
 	
 	
 	
@@ -471,6 +482,61 @@
 	.button{
 		margin-bottom:10%;
 	}
+} /* min-width 1600px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/***********/
+/*DESKTOPS*/
+/*********/
+
+/*XLarge screens (1441px-1600px)*/
+@media screen and (min-width: 90.063em) and (max-width: 100em) { 
+	/*Add styles here*/
+}/* min-width 1441px and max-width 1600px, use when QAing xlarge screen-only issues */
+
+/**********/
+/*LAPTOPS*/
+/********/
+
+/*Large screens*/
+@media screen and (min-width: 64.063em) and (max-width: 90em) { 
+	/*Add styles here*/
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/**********/
+/*TABLETS*/
+/********/
+
+/*Medium screens*/
+@media screen and (min-width: 40.063em) and (max-width: 64em) { 
+	/*Add styles here*/
+}/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/**********/
+/*MOBILE**/
+/********/
+
+/*Larger Mobile Screens*/
+@media screen and (min-width: 30em) and (max-width: 40.063em) { 
+	/*Add styles here*/
+	.nomobile{
+		display:none;
+	}
+}
+
+/*LANDSCAPE (Large Smart Phones)*/
+@media screen and (min-width: 30em) and (max-width: 40.063em) and (orientation: landscape) { 
+	/*Add styles here*/
+	.nomobile{
+		display:none;
+	}
+}
+
+/*Smaller Mobile Screens*/
+@media screen and (max-width: 30em) { 
+	/*Add styles here*/
+	.nomobile{
+		display:none;
+	}
 }
 
 
@@ -481,10 +547,7 @@
 
 
 
-/* for 700px or less 
-@media screen and (max-width: 700px) {
-#menu_txt{
-}
 
-	
-}*/
+
+
+
