@@ -19,26 +19,41 @@
   <body>
 	<header>
 		<nav role="navigation" id="top_nav" class="topnav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="shop.html">Shop</a></li>
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<i class="fas fa-bars"></i>
+			</span>
+			<ul class="main-nav">
+				<li>
+					<a href="index.html" class="nav-links">Home</a>
+				</li>
+				<li>
+					<a href="shop.html" class="nav-links">Shop</a>
+				</li>
 			</ul>	
 			<div id="logo">
 				<img id="logo_img" src="img/GGs_transparent.png" />
 				<div class="nomobile"><h1 id="logo_text">GG'S PHILLY CHEESE</h1></div>
 			</div>
-			<ul>
-				<li><a href="#" aria-haspopup="true">About</a>
-					<i class="fa fa-caret-down"></i>
-					<ul class="dropdown" aria-label="submenu">
-						<li><a href="blog/index.php">Blog</a></li>
-						<li><a href="#">Review</a></li>
+			<ul class="main-nav">
+				<li>
+				<a href="#" class="nav-links" aria-haspopup="true">About</a>
+					<ul>
+						<li>
+							<a href="blog/index.php" class="nav-links">Blog</a>
+						</li>
+						<li>
+							<a href="#" class="nav-links">Review</a>
+						</li>
 					</ul>
 				</li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="javascript:void(0);" class="icon" onclick="myHandlebar()">
-					<i class="fa fa-bars"></i>
-				</a></li>
+				<li>
+					<a href="contact.html" class="nav-links">Contact</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="icon" onclick="myHandlebar()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
