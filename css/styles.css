@@ -16,19 +16,14 @@
 html, body{
 	  height: 100%;
 }
-
 /*HEADER*/
-.topnav ul li a.icon {
+.navbar ul li a.icon {
   display: none;
 }
 .active {
   background-color: #4CAF50;
   color: white;
 }
-
-
-
-
 /*MAIN*/
 
 /*CONTENT*/
@@ -79,6 +74,115 @@ html, body{
 	text-align:center;
 }
 
+/*NAVIGATION*/
+.navbar-toggle {
+	display: none;
+}
+#chkToggle{
+	display: none;
+} 
+#chkToggle:checked + ul.main-nav {
+	display: flex;
+}
+.main-nav {
+	display: flex;
+	margin-right: 30px;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.main-nav li {
+	margin: 0;
+}
+.logo {
+	margin-top: 0;
+}
+.logo:hover,
+.nav-links:hover {
+	color: rgba(255, 255, 255, 1);
+}
+#top_nav li a {
+	display: inline;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/*_Dropdown-Nav*/
+/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
+#top_nav a:hover, a:active { 
+	color:white; 
+}
+#top_nav ul {
+	background: darkorange;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#top_nav li {
+	color: #000;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+#top_nav li:hover,
+#top_nav li:focus-within {
+	background: red;
+	cursor: pointer;
+	color:white;
+}
+#top_nav li:focus-within a {
+	outline: none;
+}
+#top_nav ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
+}
+#top_nav ul li:hover > ul,
+#top_nav ul li:focus-within >  ul,
+#top_nav ul li ul:hover,
+#top_nav ul li ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+#top_nav ul li ul li {
+	clear: both;
+	width: 100%;
+}
+/*_Navigation Logo*/
+#logo{
+	margin:0;
+	padding:0;
+}
+#logo_img {
+	display: inline-block;
+	vertical-align: top;
+	width: 260px;
+	height: 100%;
+	margin-left: 1%;
+	margin-right: 1%;
+	float:left;
+	line-height:12px;
+}
+#logo_text{
+	color:black;
+	float: left;
+	font-family:"Copasetic NF";
+	margin-top:0;
+	margin-bottom:0;
+	font-size: 240%;
+	line-height:50px;
+}
+
 
 /***************/
 /*2-DESKTOPS***/
@@ -123,101 +227,22 @@ html, body{
 	.clearText {
 		clear: both;
 	}
-	/*Navigation*/
+	/*Navagation*/
 	#top_nav{
 		display: flex;
 		width: 100%;
 		height:220px;
 		padding-top:2%;
+		justify-content: space-between;
 		background-color: #E6E6E6; /*Originally #eee*/
 		align-items: center;
 		justify-content: center;
 		font-family: 'Lato', Arial, sans-serif;
 		font-weight:700;
 	}
-	#top_nav li a {
-		display: inline;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	/*_Dropdown-Nav*/
-	/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
-	#top_nav a:hover, a:active { 
-		color:white; 
-	}
-	#top_nav ul {
-		background: darkorange;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-	#top_nav li {
-		color: #000;
-		display: block;
-		float: left;
-		padding: 1rem;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-	}
-	#top_nav li:hover,
-	#top_nav li:focus-within {
-		background: red;
-		cursor: pointer;
-		color:white;
-	}
-	#top_nav li:focus-within a {
-		outline: none;
-	}
-	#top_nav ul li ul {
-		visibility: hidden;
-		opacity: 0;
-		min-width: 5rem;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1rem;
-		left: 0;
-		display: none;
-	}
-	#top_nav ul li:hover > ul,
-	#top_nav ul li:focus-within >  ul,
-	#top_nav ul li ul:hover,
-	#top_nav ul li ul:focus {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	#top_nav ul li ul li {
-		clear: both;
-		width: 100%;
-	}
-	/*_Navigation Logo*/
-	#logo{
-		margin:0;
-		padding:0;
-		width: 280px;
-	}
-	#logo_img {
-		display: inline-block;
-		vertical-align: top;
-		width: 260px;
-		height: 100%;
-		margin-left: 1%;
-		margin-right: 1%;
-		float:left;
-		line-height:12px;
-	}
-	#logo_text{
-		color:black;
-		float: left;
-		font-family:"Copasetic NF";
-		margin-top:0;
-		margin-bottom:0;
-		font-size: 240%;
-		line-height:50px;
-	}
+	
+	
+	
 	/*Footer*/
 	footer{
 		left: 0;
@@ -475,101 +500,6 @@ html, body{
 	.clearText {
 		clear: both;
 	}
-	/*Navigation*/
-	#top_nav{
-		display: flex;
-		width: 100%;
-		height:220px;
-		padding-top:2%;
-		background-color: #E6E6E6; /*Originally #eee*/
-		align-items: center;
-		justify-content: center;
-		font-family: 'Lato', Arial, sans-serif;
-		font-weight:700;
-	}
-	#top_nav li a {
-		display: inline;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	/*_Dropdown-Nav*/
-	/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
-	#top_nav a:hover, a:active { 
-		color:white; 
-	}
-	#top_nav ul {
-		background: darkorange;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-	#top_nav li {
-		color: #000;
-		display: block;
-		float: left;
-		padding: 1rem;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-	}
-	#top_nav li:hover,
-	#top_nav li:focus-within {
-		background: red;
-		cursor: pointer;
-		color:white;
-	}
-	#top_nav li:focus-within a {
-		outline: none;
-	}
-	#top_nav ul li ul {
-		visibility: hidden;
-		opacity: 0;
-		min-width: 5rem;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1rem;
-		left: 0;
-		display: none;
-	}
-	#top_nav ul li:hover > ul,
-	#top_nav ul li:focus-within >  ul,
-	#top_nav ul li ul:hover,
-	#top_nav ul li ul:focus {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	#top_nav ul li ul li {
-		clear: both;
-		width: 100%;
-	}
-	/*_Navigation Logo*/
-	#logo{
-		margin:0;
-		padding:0;
-		width: 280px;
-	}
-	#logo_img {
-		display: inline-block;
-		vertical-align: top;
-		width: 260px;
-		height: 100%;
-		margin-left: 1%;
-		margin-right: 1%;
-		float:left;
-		line-height:12px;
-	}
-	#logo_text{
-		color:black;
-		float: left;
-		font-family:"Copasetic NF";
-		margin-top:0;
-		margin-bottom:0;
-		font-size: 240%;
-		line-height:50px;
-	}
 	/*Footer*/
 	footer{
 		left: 0;
@@ -826,101 +756,6 @@ html, body{
 	.clearText {
 		clear: both;
 	}
-	/*Navigation*/
-	#top_nav{
-		display: flex;
-		width: 100%;
-		height:220px;
-		padding-top:2%;
-		background-color: #E6E6E6; /*Originally #eee*/
-		align-items: center;
-		justify-content: center;
-		font-family: 'Lato', Arial, sans-serif;
-		font-weight:700;
-	}
-	#top_nav li a {
-		display: inline;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	/*_Dropdown-Nav*/
-	/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
-	#top_nav a:hover, a:active { 
-		color:white; 
-	}
-	#top_nav ul {
-		background: darkorange;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-	#top_nav li {
-		color: #000;
-		display: block;
-		float: left;
-		padding: 1rem;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-	}
-	#top_nav li:hover,
-	#top_nav li:focus-within {
-		background: red;
-		cursor: pointer;
-		color:white;
-	}
-	#top_nav li:focus-within a {
-		outline: none;
-	}
-	#top_nav ul li ul {
-		visibility: hidden;
-		opacity: 0;
-		min-width: 5rem;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1rem;
-		left: 0;
-		display: none;
-	}
-	#top_nav ul li:hover > ul,
-	#top_nav ul li:focus-within >  ul,
-	#top_nav ul li ul:hover,
-	#top_nav ul li ul:focus {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	#top_nav ul li ul li {
-		clear: both;
-		width: 100%;
-	}
-	/*_Navigation Logo*/
-	#logo{
-		margin:0;
-		padding:0;
-		width: 280px;
-	}
-	#logo_img {
-		display: inline-block;
-		vertical-align: top;
-		width: 260px;
-		height: 100%;
-		margin-left: 1%;
-		margin-right: 1%;
-		float:left;
-		line-height:12px;
-	}
-	#logo_text{
-		color:black;
-		float: left;
-		font-family:"Copasetic NF";
-		margin-top:0;
-		margin-bottom:0;
-		font-size: 240%;
-		line-height:50px;
-	}
 	/*Footer*/
 	footer{
 		left: 0;
@@ -1174,106 +1009,6 @@ html, body{
 	}
 	.clearText {
 		clear: both;
-	}
-	/*Navigation*/
-	#top_nav{
-		display: flex;
-		width: 100%;
-		height:220px;
-		padding-top:2%;
-		background-color: #E6E6E6; /*Originally #eee*/
-		align-items: center;
-		justify-content: center;
-		font-family: 'Lato', Arial, sans-serif;
-		font-weight:700;
-	}
-	#top_nav li a {
-		display: inline;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	/*_Dropdown-Nav*/
-	/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
-	#top_nav a:hover, a:active { 
-		color:white; 
-	}
-	#top_nav ul {
-		background: darkorange;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-	#top_nav li {
-		color: #000;
-		display: block;
-		float: left;
-		padding: 1rem;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-	}
-	#top_nav li .icon{
-		background-color:white;
-	}
-	
-	
-	#top_nav li:hover,
-	#top_nav li:focus-within {
-		background: red;
-		cursor: pointer;
-		color:white;
-	}
-	#top_nav li:focus-within a {
-		outline: none;
-	}
-	#top_nav ul li ul {
-		visibility: hidden;
-		opacity: 0;
-		min-width: 5rem;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1rem;
-		left: 0;
-		display: none;
-	}
-	#top_nav ul li:hover > ul,
-	#top_nav ul li:focus-within >  ul,
-	#top_nav ul li ul:hover,
-	#top_nav ul li ul:focus {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	#top_nav ul li ul li {
-		clear: both;
-		width: 100%;
-	}
-	/*_Navigation Logo*/
-	#logo{
-		margin:0;
-		padding:0;
-		width: 280px;
-	}
-	#logo_img {
-		display: inline-block;
-		vertical-align: top;
-		width: 260px;
-		height: 100%;
-		margin-left: 1%;
-		margin-right: 1%;
-		float:left;
-		line-height:12px;
-	}
-	#logo_text{
-		color:black;
-		float: left;
-		font-family:"Copasetic NF";
-		margin-top:0;
-		margin-bottom:0;
-		font-size: 240%;
-		line-height:50px;
 	}
 	/*Footer*/
 	footer{
@@ -1530,101 +1265,6 @@ html, body{
 	.clearText {
 		clear: both;
 	}
-	/*Navigation*/
-	#top_nav{
-		display: flex;
-		width: 100%;
-		height:220px;
-		padding-top:2%;
-		background-color: #E6E6E6; /*Originally #eee*/
-		align-items: center;
-		justify-content: center;
-		font-family: 'Lato', Arial, sans-serif;
-		font-weight:700;
-	}
-	#top_nav li a {
-		display: inline;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	/*_Dropdown-Nav*/
-	/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
-	#top_nav a:hover, a:active { 
-		color:white; 
-	}
-	#top_nav ul {
-		background: darkorange;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-	#top_nav li {
-		color: #000;
-		display: block;
-		float: left;
-		padding: 1rem;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-	}
-	#top_nav li:hover,
-	#top_nav li:focus-within {
-		background: red;
-		cursor: pointer;
-		color:white;
-	}
-	#top_nav li:focus-within a {
-		outline: none;
-	}
-	#top_nav ul li ul {
-		visibility: hidden;
-		opacity: 0;
-		min-width: 5rem;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1rem;
-		left: 0;
-		display: none;
-	}
-	#top_nav ul li:hover > ul,
-	#top_nav ul li:focus-within >  ul,
-	#top_nav ul li ul:hover,
-	#top_nav ul li ul:focus {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	#top_nav ul li ul li {
-		clear: both;
-		width: 100%;
-	}
-	/*_Navigation Logo*/
-	#logo{
-		margin:0;
-		padding:0;
-		width: 280px;
-	}
-	#logo_img {
-		display: inline-block;
-		vertical-align: top;
-		width: 260px;
-		height: 100%;
-		margin-left: 1%;
-		margin-right: 1%;
-		float:left;
-		line-height:12px;
-	}
-	#logo_text{
-		color:black;
-		float: left;
-		font-family:"Copasetic NF";
-		margin-top:0;
-		margin-bottom:0;
-		font-size: 240%;
-		line-height:50px;
-	}
 	/*Footer*/
 	footer{
 		left: 0;
@@ -1880,101 +1520,6 @@ html, body{
 	}
 	.clearText {
 		clear: both;
-	}
-	/*Navigation*/
-	#top_nav{
-		display: flex;
-		width: 100%;
-		height:220px;
-		padding-top:2%;
-		background-color: #E6E6E6; /*Originally #eee*/
-		align-items: center;
-		justify-content: center;
-		font-family: 'Lato', Arial, sans-serif;
-		font-weight:700;
-	}
-	#top_nav li a {
-		display: inline;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	/*_Dropdown-Nav*/
-	/*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
-	#top_nav a:hover, a:active { 
-		color:white; 
-	}
-	#top_nav ul {
-		background: darkorange;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-	#top_nav li {
-		color: #000;
-		display: block;
-		float: left;
-		padding: 1rem;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-	}
-	#top_nav li:hover,
-	#top_nav li:focus-within {
-		background: red;
-		cursor: pointer;
-		color:white;
-	}
-	#top_nav li:focus-within a {
-		outline: none;
-	}
-	#top_nav ul li ul {
-		visibility: hidden;
-		opacity: 0;
-		min-width: 5rem;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1rem;
-		left: 0;
-		display: none;
-	}
-	#top_nav ul li:hover > ul,
-	#top_nav ul li:focus-within >  ul,
-	#top_nav ul li ul:hover,
-	#top_nav ul li ul:focus {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	#top_nav ul li ul li {
-		clear: both;
-		width: 100%;
-	}
-	/*_Navigation Logo*/
-	#logo{
-		margin:0;
-		padding:0;
-		width: 280px;
-	}
-	#logo_img {
-		display: inline-block;
-		vertical-align: top;
-		width: 260px;
-		height: 100%;
-		margin-left: 1%;
-		margin-right: 1%;
-		float:left;
-		line-height:12px;
-	}
-	#logo_text{
-		color:black;
-		float: left;
-		font-family:"Copasetic NF";
-		margin-top:0;
-		margin-bottom:0;
-		font-size: 240%;
-		line-height:50px;
 	}
 	/*Footer*/
 	footer{
@@ -2899,12 +2444,9 @@ html, body{
 		padding: 0;
 		margin: 0;
 	}
-	.nomobile{
-		display:none;
-	}
-	
+	/*Responsive Navbar with Dropdown*/
 	/*Responsive Navigation*/
-	.topnav {
+	.navbar {
 		font-size: 18px;
 		background-image: linear-gradient(260deg, #f7b733 0%, #fc4a1a   100%); /*Ref: https://uigradients.com/#OrangeFun*/
 		border: 1px solid rgba(0, 0, 0, 0.2);
@@ -2915,7 +2457,7 @@ html, body{
 		display: none;
 	}
 	.nav-links,
-	.logo {
+	#logo {
 		text-decoration: none;
 		color: rgba(255, 255, 255, 0.7);
 	}
@@ -2923,8 +2465,6 @@ html, body{
 		text-align: center;
 		margin: 15px auto;
 	}
-	
-	
 	/*_Hamburger Menu Icon*/
 	.navbar-toggle {
 		position: absolute;
@@ -2934,11 +2474,11 @@ html, body{
 		color: rgba(255,255,255,0.8);
 		font-size: 24px;
 	}
-	.main-nav {
-		list-style-type: none;
+	#chkToggle {
 		display: none;
 	}
-	.active {
+
+	#chkToggle:checked + ul.main-nav {
 		display: block;
 	}
 	#logo{
@@ -2956,8 +2496,24 @@ html, body{
 		float:center;
 		line-height:12px;
 	}
+	#logo_text{
+		display:none;
+	}
+/* 	#top_nav{
+		display: flex;
+		width: 100%;
+		height:220px;
+		padding-top:2%;
+		justify-content: space-between;
+		background-color: #E6E6E6; 
+		align-items: center;
+		justify-content: center;
+		font-family: 'Lato', Arial, sans-serif;
+		font-weight:700;
+	} */
 };
 
 
-/*Responsive Navbar with Dropdown*/
+
+
 

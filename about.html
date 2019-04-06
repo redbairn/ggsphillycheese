@@ -18,10 +18,15 @@
   </head>
   <body>
 	<header>
-		<nav role="navigation" id="top_nav" class="topnav">
-			<span class="navbar-toggle" id="js-navbar-toggle">
+		<nav role="navigation" id="top_nav" class="navbar">
+			<label class="navbar-toggle" for="chkToggle">
 				<i class="fas fa-bars"></i>
-			</span>
+			</label>
+			<div id="logo">
+				<img id="logo_img" src="img/GGs_transparent.png" />
+				<h1 id="logo_text">GG'S PHILLY CHEESE</h1>
+			</div>
+			<input type="checkbox" id="chkToggle"></input>
 			<ul class="main-nav">
 				<li>
 					<a href="index.html" class="nav-links">Home</a>
@@ -29,12 +34,6 @@
 				<li>
 					<a href="shop.html" class="nav-links">Shop</a>
 				</li>
-			</ul>	
-			<div id="logo">
-				<img id="logo_img" src="img/GGs_transparent.png" />
-				<div class="nomobile"><h1 id="logo_text">GG'S PHILLY CHEESE</h1></div>
-			</div>
-			<ul class="main-nav">
 				<li>
 				<a href="#" class="nav-links" aria-haspopup="true">About</a>
 					<ul>
@@ -49,12 +48,7 @@
 				<li>
 					<a href="contact.html" class="nav-links">Contact</a>
 				</li>
-				<li>
-					<a href="javascript:void(0);" class="icon" onclick="myHandlebar()">
-						<i class="fa fa-bars"></i>
-					</a>
-				</li>
-			</ul>
+			</ul>	
 		</nav>
 	</header>
 	
