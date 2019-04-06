@@ -17,41 +17,42 @@
     <script charset="utf-8" src="js/main.js"></script>
 
   </head>
-
-  <body>
-	<nav role="navigation" id="top_nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="shop.html">Shop</a></li>
-		</ul>	
-		<div id="logo">
-			<img id="logo_img" src="img/GGs_transparent.png" />
-			<h1 id="logo_text">GG'S PHILLY CHEESE</h1>
-		</div>
-		<ul>
-			<li><a href="#" aria-haspopup="true">About</a>
-				<ul class="dropdown" aria-label="submenu">
-					<li><a href="blog.php">Blog</a></li>
-					<li><a href="#">Review</a></li>
-				</ul>
-			</li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
- 	<body class="site">
+  <body class="site">
+	<header>
+		<nav role="navigation" id="top_nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+			</ul>	
+			<div id="logo">
+				<img id="logo_img" src="img/GGs_transparent.png" />
+				<div class="nomobile"><h1 id="logo_text">GG'S PHILLY CHEESE</h1></div>
+			</div>
+			<ul>
+				<li><a href="#" aria-haspopup="true">About</a>
+					<ul class="dropdown" aria-label="submenu">
+						<li><a href="blog/index.php">Blog</a></li>
+						<li><a href="#">Review</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>	
 	<main class="site-content">
 		<div class="col-1"></div>
 		<div class="col-2">
 			<div id="chalk_board">
-			<div id="menu_txt">
-				
+			
+			<div id="menu_txt">				
 					<div class="menu_header">
 						<div class="nomobile"><h2>"The best Philly cheese this side of the Atlantic"</h2></div>
 						<div class="mecu_icon">
-						<picture>
-							<source media="(min-width: 701px)"
-							srcset="img/menu_icon1.png"/>
-							<img id="menu_icon" src="img/menu_icon.png"/>
+							<picture>
+								<source media="(min-width: 701px)"
+								srcset="img/menu_icon1.png"/>
+								<img id="GGmenu" src="img/GGmenu.png" alt="GG's Menu"/>
+							<picture>
 						</div>
 					</div>
 					
@@ -60,7 +61,7 @@
 						<p>A 7.5" soft cub roll with melt in the mouth tender steak,
 						<br>Sauteed bell peppers and onions, all topped with a delicious cheese sauce.</p>
 						</div>
-					<div id="toppings">Add Jalepeños or Mushrooms (Free)</div>
+					<p>Add Jalepeños or Mushrooms (Free)</p>
 				<h3>Drinks 1.50</h3>
 					<p>Coke, 7up, Fanta, Water.</p>
 				<h3>Wednesday - Central Park Sandyford: 11am - 2pm
