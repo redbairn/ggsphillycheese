@@ -472,8 +472,6 @@ blockquote span{
 	}
 /* General */
 
-
-
 /******************/
 /*HI-DEF DESKTOPS*/
 /****************/
@@ -485,18 +483,7 @@ blockquote span{
 	*/
 	
 	/*Shop Page*/
-	#chalk_board{
-		display: grid;
-		min-height: 80%;
-		width: 80%;
-		grid-template-rows: auto 1fr auto;
-		text-align:center;
-		margin-left:10%;
-		margin-top:10%;
-		background-color: black;
-		border-color: white;
-		border-style: solid;
-	}
+	
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
@@ -535,18 +522,7 @@ blockquote span{
 	*/
 	
 	/*Shop Page*/
-	#chalk_board{
-		display: grid;
-		min-height: 80%;
-		width: 80%;
-		grid-template-rows: auto 1fr auto;
-		text-align:center;
-		margin-left:10%;
-		margin-top:10%;
-		background-color: black;
-		border-color: white;
-		border-style: solid;
-	}
+	
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
@@ -583,18 +559,7 @@ blockquote span{
 	*/
 	
 	/*Shop Page*/
-	#chalk_board{
-		display: grid;
-		min-height: 80%;
-		width: 80%;
-		grid-template-rows: auto 1fr auto;
-		text-align:center;
-		margin-left:10%;
-		margin-top:10%;
-		background-color: black;
-		border-color: white;
-		border-style: solid;
-	}
+	
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
@@ -632,18 +597,7 @@ blockquote span{
 	*/
 	
 	/*Shop Page*/
-	#chalk_board{
-		display: grid;
-		min-height: 80%;
-		width: 80%;
-		grid-template-rows: auto 1fr auto;
-		text-align:center;
-		margin-left:10%;
-		margin-top:10%;
-		background-color: black;
-		border-color: white;
-		border-style: solid;
-	}
+	
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
@@ -681,18 +635,7 @@ blockquote span{
 	smaller screens!
 	*/
 	/*Shop Page*/
-	#chalk_board{
-		display: grid;
-		min-height: 80%;
-		width: 80%;
-		grid-template-rows: auto 1fr auto;
-		text-align:center;
-		margin-left:10%;
-		margin-top:10%;
-		background-color: black;
-		border-color: white;
-		border-style: solid;
-	}
+	
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
@@ -729,17 +672,7 @@ blockquote span{
 	smaller screens!
 	*/
 	/*Shop Page*/
-	#chalk_board{
-		display: grid;
-		min-height: 80%;
-		width: 80%;
-		grid-template-rows: auto 1fr auto;
-		text-align:center;
-		margin-left:10%;
-		margin-top:10%;
-		background-color: black;
-		border-color: white;
-		border-style: solid;
+	
 	}
 	#menu_txt{
 		font-family: "kg-noregrets.ketch"; 
