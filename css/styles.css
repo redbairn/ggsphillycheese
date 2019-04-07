@@ -16,9 +16,6 @@
 html, body{
 	  height: 100%;
 }
-html{
-	font-size:16px;
-}
 
 /*HEADER*/
 
@@ -34,34 +31,6 @@ html{
 .col-3 {
 	grid-column-start: 3;
 }
-/*WP Item*/
-h1:not(.site-title):before,
-h2:before {
-  height: 0px;
-  margin: 0rem 0;
-  width: 0em;
-}
-.entry .entry-title:before {
-  height: 0px;
-  margin: 0rem 0;
-  width: 0em;
-}
-#colophon {display:none}
-
-.site-header{
-    padding-top: 0em;
-    padding-right: 4.5455%;
-    padding-bottom: 0em;
-    padding-left: 4.5455%;
-	margin-lefT:15%;
-}
-.site-inner{
-	text-align:center;
-}
-.widget{
-	margin-top:5%;
-}
-
 /*FONTS*/
 /* @font-face kit by Fonts2u (https://fonts2u.com) */ 
 @font-face { 
