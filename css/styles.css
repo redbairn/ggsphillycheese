@@ -699,11 +699,11 @@ blockquote span{
 	*/
 	#logo_img {
 		width: 200px;
-		margin-left: 10%;
+		margin-left: 20%;
 	}
 	#logo_text{
 		font-size: 1.8em;
-		margin-left: 10%;
+		margin-left: 20%;
 	}
 	.site-content {
 		display: grid;
