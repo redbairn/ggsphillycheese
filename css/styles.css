@@ -317,6 +317,7 @@ blockquote span{
 		color:#353535;
 		text-align:center;
 		border-color:#261a12;/*Old #B85B14*/
+		border-top-width: 0.25px;
 		border-style: solid;
 	}
 	/*ContactPage Css*/
