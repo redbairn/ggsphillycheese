@@ -480,30 +480,43 @@ blockquote span{
 /*
 	Add styles for even 
 	smaller screens!
-	*/
+	*/.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: var(--space) var(--space) 0;
+		background: #F5842E;  
+		text-align:center;
+		border-color:#261a12;
+		border-style: solid;
+		margin-left:20%;
+		margin-right:20%;
+		grid-template-rows: 20% 60% 20%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 20% 60% 20%;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	
 	
 	/*Shop Page*/
 	
 	#menu_txt{
-		font-family: "kg-noregrets.ketch"; 
-		color: white;
-		letter-spacing: 2px;
-		margin-left: 30px;
-		margin-right: 30px;
+		font-size: 1.2em;
 	}
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 250px;
 	}
 	#merchtxt{
-		font-family: "lightout";
-		letter-spacing: 2px;
-		font-weight: bold;
+		font-size: 1.2em;
 	}
 
 	.merch_items{
-		height: 150px;
-		width: 150px;
+		height: 250px;
+		width: 2500px;
 	}
 	.button{
 		margin-bottom:10%;
@@ -519,30 +532,46 @@ blockquote span{
 	/*
 	Add styles for even 
 	smaller screens!
-	*/
+	*/.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: var(--space) var(--space) 0;
+		background: #F5842E;  
+		text-align:center;
+		border-color:#261a12;
+		border-style: solid;
+		margin-left:20%;
+		margin-right:20%;
+		grid-template-rows: 20% 60% 20%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 20% 60% 20%;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	
 	
 	/*Shop Page*/
 	
 	#menu_txt{
-		font-family: "kg-noregrets.ketch"; 
-		color: white;
 		letter-spacing: 2px;
 		margin-left: 30px;
 		margin-right: 30px;
+		font-size: 1.1em;
 	}
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 200px;
 	}
 	#merchtxt{
-		font-family: "lightout";
-		letter-spacing: 2px;
-		font-weight: bold;
+		font-size: 1.2em;
 	}
 	
 	.merch_items{
-		height: 150px;
-		width: 150px;
+		height: 250px;
+		width: 250px;
 	}
 	.button{
 		margin-bottom:10%;
@@ -557,29 +586,40 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
+	.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: var(--space) var(--space) 0;
+		background: #F5842E;  
+		text-align:center;
+		border-color:#261a12;
+		border-style: solid;
+		margin-left:20%;
+		margin-right:20%;
+		grid-template-rows: 20% 60% 20%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 20% 60% 20%;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	
 	
 	/*Shop Page*/
 	
-	#menu_txt{
-		font-family: "kg-noregrets.ketch"; 
-		color: white;
-		letter-spacing: 2px;
-		margin-left: 30px;
-		margin-right: 30px;
-	}
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 250px;
 	}
 	#merchtxt{
-		font-family: "lightout";
-		letter-spacing: 2px;
-		font-weight: bold;
+		font-size: 1.2em;
 	}
 	
 	.merch_items{
-		height: 150px;
-		width: 150px;
+		height: 200px;
+		width: 200px;
 	}
 	.button{
 		margin-bottom:10%;
@@ -595,33 +635,55 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
+	#logo_img {
+		width: 160px;
+		margin-left: 20%;
+	}
+	#logo_text{
+		font-size: 1.5em;
+		margin-left: 20%;
+	.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: var(--space) var(--space) 0;
+		background: #F5842E;  
+		text-align:center;
+		border-color:#261a12;
+		border-style: solid;
+		margin-left:20%;
+		margin-right:20%;
+		grid-template-rows: 20% 60% 20%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 20% 60% 20%;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	
 	
 	/*Shop Page*/
-	
 	#menu_txt{
-		font-family: "kg-noregrets.ketch"; 
-		color: white;
-		letter-spacing: 2px;
-		margin-left: 30px;
-		margin-right: 30px;
+		font-size: 1.2em;
 	}
+	
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 250px;
 	}
 	#merchtxt{
-		font-family: "lightout";
-		letter-spacing: 2px;
-		font-weight: bold;
+		font-size: 1.2em;
 	}
 
 	.merch_items{
-		height: 150px;
-		width: 150px;
+		height: 200px;
+		width: 200px;
 	}
 	.button{
 		margin-bottom:10%;
 	}
+
 }/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 
@@ -634,18 +696,38 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
+	#logo_img {
+		width: 200px;
+		margin-left: 10%;
+	}
+	#logo_text{
+		font-size: 1.5em;
+		margin-left: 20%;
+	}
+	.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: 0;
+		margin-left:5%;
+		margin-right:5%;
+		grid-template-rows: 10% 80% 10%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 10% 80% 10%;
+		margin-left:15%;
+		margin-right:15%;
+	}
+	
 	/*Shop Page*/
 	
 	#menu_txt{
-		font-family: "kg-noregrets.ketch"; 
-		color: white;
-		letter-spacing: 2px;
-		margin-left: 30px;
-		margin-right: 30px;
+		font-size: 0.8em;
 	}
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 200px;
 	}
 	#merchtxt{
 		font-family: "lightout";
@@ -660,6 +742,7 @@ blockquote span{
 	.button{
 		margin-bottom:10%;
 	}
+	
 }/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /**********/
@@ -671,19 +754,37 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
+	#logo_img {
+		width: 160px;
+	}
+	#logo_txt{
+		font-size: 100%;
+	}
+	.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: 0;
+		margin-left:5%;
+		margin-right:5%;
+		grid-template-rows: 10% 80% 10%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 10% 80% 10%;
+		margin-left:5%;
+		margin-right:5%;
+	}
+	
 	/*Shop Page*/
 	
-	}
+	
 	#menu_txt{
-		font-family: "kg-noregrets.ketch"; 
-		color: white;
-		letter-spacing: 2px;
-		margin-left: 30px;
-		margin-right: 30px;
+		font-size: 0.7em;
 	}
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 200px;
 	}
 	#merchtxt{
 		font-family: "lightout";
@@ -698,6 +799,9 @@ blockquote span{
 	.button{
 		margin-bottom:10%;
 	}
+	.nomobile{
+		display:none;
+	}
 }/*End of Large Mobiles*/
 
 /*LANDSCAPE (Large Smart Phones)*/
@@ -706,6 +810,26 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
+	#logo_img {
+		width: 180px;
+	}
+		
+	.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: 0;
+		margin-left:5%;
+		margin-right:5%;
+		grid-template-rows: 10% 80% 10%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 10% 80% 10%;
+		margin-left:5%;
+		margin-right:5%;
+	}
+	
 	
 	/*Shop Page*/
 	#chalk_board{
@@ -724,17 +848,16 @@ blockquote span{
 		font-family: "kg-noregrets.ketch"; 
 		color: white;
 		letter-spacing: 2px;
-		margin-left: 30px;
-		margin-right: 30px;
+		margin-left: 1em;
+		margin-right: 1em;
+		font-size: 0.6em;
 	}
 	#GGmenu{
 		height: auto;
-		width: 150px;
+		width: 200px;
 	}
 	#merchtxt{
-		font-family: "lightout";
-		letter-spacing: 2px;
-		font-weight: bold;
+		
 	}
 	
 	.merch_items{
@@ -744,6 +867,7 @@ blockquote span{
 	.button{
 		margin-bottom:10%;
 	}
+	
 }/*Ex.800x480 - OnePlus 3*/
 
 
@@ -755,9 +879,3 @@ blockquote span{
 	*/
 }
 
-/*for 700px or less*/
-@media screen and (max-width: 700px) {
-	.nomobile{
-		display:none;
-	}
-}
