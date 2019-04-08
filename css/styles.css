@@ -516,7 +516,7 @@ blockquote span{
 
 	.merch_items{
 		height: 250px;
-		width: 2500px;
+		width: 250px;
 	}
 	.button{
 		margin-bottom:10%;
@@ -650,16 +650,16 @@ blockquote span{
 		text-align:center;
 		border-color:#261a12;
 		border-style: solid;
-		margin-left:20%;
-		margin-right:20%;
+		margin-left:10%;
+		margin-right:10%;
 		grid-template-rows: 20% 60% 20%;
 	}
 	.content_wrapper {
 		display: grid;
 		flex: 1 0 auto; /* 2 */
 		grid-template-rows: 20% 60% 20%;
-		margin-left:20%;
-		margin-right:20%;
+		margin-left:10%;
+		margin-right:10%;
 	}
 	
 	
@@ -716,8 +716,8 @@ blockquote span{
 		display: grid;
 		flex: 1 0 auto; /* 2 */
 		grid-template-rows: 10% 80% 10%;
-		margin-left:15%;
-		margin-right:15%;
+		margin-left:5%;
+		margin-right:5%;
 	}
 	
 	/*Shop Page*/
