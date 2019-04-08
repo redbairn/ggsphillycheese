@@ -635,13 +635,13 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
-	#logo_img {
+	/*#logo_img {
 		width: 160px;
 		margin-left: 20%;
 	}
 	#logo_text{
 		font-size: 1.5em;
-		margin-left: 20%;
+		margin-left: 20%;*/
 	.site-content {
 		display: grid;
 		flex: 1 0 auto; /* 2 */
@@ -701,8 +701,8 @@ blockquote span{
 		margin-left: 10%;
 	}
 	#logo_text{
-		font-size: 1.5em;
-		margin-left: 20%;
+		font-size: 1.8em;
+		margin-left: 10%;
 	}
 	.site-content {
 		display: grid;
@@ -877,5 +877,53 @@ blockquote span{
 	Add styles for even 
 	smaller screens!
 	*/
+	#logo_img {
+		width: 160px;
+	}
+	#logo_txt{
+		font-size: 100%;
+	}
+	.site-content {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		padding: 0;
+		margin-left:5%;
+		margin-right:5%;
+		grid-template-rows: 10% 80% 10%;
+	}
+	.content_wrapper {
+		display: grid;
+		flex: 1 0 auto; /* 2 */
+		grid-template-rows: 10% 80% 10%;
+		margin-left:5%;
+		margin-right:5%;
+	}
+	
+	/*Shop Page*/
+	
+	
+	#menu_txt{
+		font-size: 0.7em;
+	}
+	#GGmenu{
+		height: auto;
+		width: 200px;
+	}
+	#merchtxt{
+		font-family: "lightout";
+		letter-spacing: 2px;
+		font-weight: bold;
+	}
+	
+	.merch_items{
+		height: 150px;
+		width: 150px;
+	}
+	.button{
+		margin-bottom:10%;
+	}
+	.nomobile{
+		display:none;
+	}
 }
 
