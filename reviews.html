@@ -17,6 +17,10 @@
     <script charset="utf-8" src="js/main.js"></script>
   </head>
   <body>
+  <!--For Facebook Reviews (posts)-->
+  <div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
+  <!--End of Facebook Reviews (posts)-->
 	<header>
 		<nav role="navigation" id="top_nav">
 			<ul>
@@ -43,8 +47,15 @@
 			<div class="col-1"></div>
 			<div class="col-2">
 				<!--Start Content-->
-				<h1>Reviews Header</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum imperdiet dignissim. Mauris neque eros, blandit quis quam sit amet, vehicula feugiat nisl. Ut ornare metus sit amet sodales feugiat. Nullam suscipit scelerisque orci, ut tempus lorem viverra quis. Aliquam erat volutpat. Vivamus scelerisque in nisi quis porta. Nulla sit amet nisl neque. Morbi justo diam, tempus non aliquam vel, facilisis vel massa. Phasellus blandit viverra eros, quis bibendum quam aliquam et.</p>
+				<h1>Facebook Reviews</h1>
+				<p>The following reviews were sent in from the lovely folk on Facebook!</p>
+				<!--Facebook Reviews-->
+				<!--Ref:https://developers.facebook.com/docs/plugins/embedded-posts/-->
+				<div class="fb-post" data-href="https://www.facebook.com/johnr.mchale/posts/10157267435672392" data-width="500" data-show-text="true">
+					<blockquote cite="https://developers.facebook.com/johnr.mchale/posts/10157267435672392" class="fb-xfbml-parse-ignore"><p>Really good, juicy tender steak strips  , grilled onion and  peppers , optional jalepenos and mushrooms on a properly toasted sub. Mash was great too. I’ll be back.</p>Posted by <a href="#" role="button">John McHale</a> on&nbsp;<a href="https://developers.facebook.com/johnr.mchale/posts/10157267435672392">Thursday, 28 March 2019</a></blockquote>
+				</div>
+				<!--End first Facebook Review-->
+				
 				<p>Fusce at turpis ut justo ullamcorper cursus. Cras hendrerit elementum iaculis. Pellentesque in lectus non metus congue scelerisque eu a ipsum. Maecenas vel ex nec nunc molestie luctus vehicula quis magna. Etiam nibh tortor, porta a dignissim bibendum, luctus nec leo. Nullam tincidunt leo nec faucibus hendrerit. Aliquam sollicitudin odio tellus, a suscipit erat feugiat in. Nunc ac neque ac dolor gravida aliquam. Etiam auctor tristique finibus. Phasellus accumsan diam quis dolor condimentum ultricies. Vivamus et ex dui. Suspendisse pharetra ex urna, et tempor neque scelerisque non.</p>
 				<p>Nulla sit amet scelerisque nunc, ac convallis elit. Vivamus semper condimentum urna id accumsan. Cras ultricies massa nulla, quis egestas enim finibus eget. Aliquam pellentesque lectus arcu, vitae dictum mi posuere non. Mauris eu libero mauris. Maecenas congue erat non nisl commodo efficitur. Nulla egestas eleifend quam, non tincidunt leo fermentum eget. Aenean blandit mi eget porta aliquam. Donec placerat erat sit amet purus vulputate accumsan. Sed commodo odio at ullamcorper placerat. Pellentesque egestas ipsum ac rutrum semper.</p>
 				<p>Curabitur vel nisi tellus. Fusce a est efficitur, sagittis est sed, viverra metus. Etiam tempor venenatis dignissim. Vestibulum quis ipsum facilisis, tincidunt tortor sit amet, facilisis libero. Nulla facilisi. Quisque lectus nisl, sodales eget lacinia sit amet, cursus aliquet ligula. Integer eu fringilla diam, a finibus tellus. Etiam porttitor elementum mauris ut venenatis.</p>
