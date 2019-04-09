@@ -684,7 +684,16 @@ blockquote span{
 	.button{
 		margin-bottom:10%;
 	}
-
+	/*_Footer Wrapper*/
+	.footer_wrapper {
+		display:grid;
+		min-height: 100%;
+		margin-left: 10%;
+		margin-right: 10%;
+		grid-template-rows: 20% 60% 20%;
+		font-size:0.9em;
+		height:100%;
+	}
 }/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 
@@ -743,7 +752,16 @@ blockquote span{
 	.button{
 		margin-bottom:10%;
 	}
-	
+	/*_Footer Wrapper*/
+	.footer_wrapper {
+		display:grid;
+		min-height: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		grid-template-rows: 20% 60% 20%;
+		font-size:0.9em;
+		height:100%;
+	}
 }/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /**********/
@@ -802,6 +820,16 @@ blockquote span{
 	}
 	.nomobile{
 		display:none;
+	}
+	/*_Footer Wrapper*/
+	.footer_wrapper {
+		display:grid;
+		min-height: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		grid-template-rows: 20% 60% 20%;
+		font-size:0.9em;
+		height:100%;
 	}
 }/*End of Large Mobiles*/
 
@@ -868,7 +896,16 @@ blockquote span{
 	.button{
 		margin-bottom:10%;
 	}
-	
+	/*_Footer Wrapper*/
+	.footer_wrapper {
+		display:grid;
+		min-height: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		grid-template-rows: 20% 60% 20%;
+		font-size:0.9em;
+		height:100%;
+	}
 }/*Ex.800x480 - OnePlus 3*/
 
 
@@ -926,5 +963,15 @@ blockquote span{
 	.nomobile{
 		display:none;
 	}
-}
+	/*_Footer Wrapper*/
+	.footer_wrapper {
+		display:grid;
+		min-height: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		grid-template-rows: 20% 60% 20%;
+		font-size:0.9em;
+		height:100%;
+	}
+}/*End of Media Queries*/
 
