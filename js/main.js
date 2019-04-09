@@ -97,6 +97,7 @@ function initMap() {
 
             if (properties.category == category || category.length === 0) {
                 properties.setVisible(true);
+                properties.poistion(this.getPosition());
                 closeAllInfoWindows(map); // Hide all info windows when selection from dropdown menu changes.
             } else {
                 properties.setVisible(false);
