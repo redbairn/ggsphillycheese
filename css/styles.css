@@ -377,7 +377,7 @@ select {
 	font-family: 'Gotham', 'Montserrat', sans-serif;
 	text-align-last: left;
 }
-input, select {
+input, select, textarea {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -386,8 +386,24 @@ option:selected {
   color:#D3D3D3;
 }
 /* Set display preferences for map. */
+
+#mapHolder {
+  width: 100%;
+  margin: 0 auto;
+  margin-top:50px;
+
+}
+
+#mapContainer {
+	position: relative;
+}
+
 #map {
-	height: 300px;
+	height: 0;
+    overflow: hidden;
+    padding-bottom: 42.25%;
+    padding-top: 30px;
+    position: relative;
 }
 /* Hide 'Google Maps API's Terms of Use'. */
 .gmnoprint a,
@@ -457,6 +473,10 @@ textarea {
 }
 .ccbtn:hover{
 	background:#d8850e;
+}
+
+#fas {
+	size: 5x;
 }
 img {
 	height: 32px;
@@ -667,8 +687,8 @@ img {
 	*/
 	.site-content {
 		
-		margin-left:10%;
-		margin-right:10%;
+		margin-left:20%;
+		margin-right:20%;
 		grid-template-rows: 20% 60% 20%;
 	}
 	.content_wrapper {
@@ -713,9 +733,8 @@ img {
 	smaller screens!
 	*/
 	.site-content {
-		
-		margin-left:10%;
-		margin-right:10%;
+		margin-left:20%;
+		margin-right:20%;
 		grid-template-rows: 20% 60% 20%;
 		font-size:1.5em;
 	}
@@ -763,8 +782,8 @@ img {
 	*/
 	.site-content {
 		font-size:1.5em;
-		margin-left:10%;
-		margin-right:10%;
+		margin-left:20%;
+		margin-right:20%;
 		grid-template-rows: 20% 60% 20%;
 	}
 	.content_wrapper {
@@ -824,8 +843,12 @@ img {
 		margin-left:10%;
 		margin-right:10%;
 	}
-	
-	
+	/*Contacts page*/
+	#mapHolder {
+ 		width: 40%;
+ 
+}
+
 	/*Shop Page*/
 	#chalk_board{
 		min-height: 90%;

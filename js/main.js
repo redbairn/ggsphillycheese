@@ -104,6 +104,13 @@ function initMap() {
         }
     }
 
+        //Resize Function
+        google.maps.event.addDomListener(window, "resize", function() {
+            var center = map.getCenter();
+            google.maps.event.trigger(map, "resize");
+            map.setCenter(center);
+        });
+    
     // Close all info windows and open only one that corresponds to when marker is clicked.
 
     function closeAllInfoWindows(map) {
@@ -113,7 +120,4 @@ function initMap() {
     
 
     }
-
-
-
 }

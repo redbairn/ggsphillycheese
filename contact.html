@@ -10,6 +10,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=1000, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#f28530">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#f28530">
 		<link rel="stylesheet" href="css/styles.css">
 		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
@@ -43,6 +60,7 @@
 		<!-- Google Map -->
 		<div class="col-1"></div>
 		<div class="col-2">
+			<div class="mapHolder">
 			<h2>Google Maps with Markers</h2>
 			<div id="description">The maps show all our locations, if you would like to know what day we are where, please select from the dropdown menu</div>
 			<div id="dropdown">
@@ -55,8 +73,10 @@
 			  </select>
 			</div>
 			<!--Google Map-->
+			
+			<div id="mapContainer"></div>
 			<div id="map"></div>
-
+			</div>	
 			<!-- Contact Form -->
 			<header class="ccheader">
 				<h1>Contact Us</h1>	
@@ -70,9 +90,11 @@
 				<div class="ccfield-prepend">
 					<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
 					<input class="ccformfield" type="text" placeholder="Surname" required>
-				</div>
+				</div> 
+
+				
 				<div class="ccfield-prepend">
-					<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+					<span class="ccform-addon"><i class="fas fa-allergies"></i></i></span>
 					<select class="ccformfield">
 						<option value="" disabled selected>-Please choose an allergy if applicable-</option>
 						<option value="Cereals containing gluten" >Cereals containing gluten</option>
