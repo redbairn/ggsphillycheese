@@ -433,7 +433,7 @@ textarea {
 }
 .ccform {
 	margin: 0 auto;
-	width: 800px;
+	width: 90%;
 }
 .ccfield-prepend{
 	margin-bottom:10px;
@@ -474,8 +474,12 @@ textarea {
 	background:#d8850e;
 }
 
-#fas {
-	size: 5x;
+.fa-allergies {
+	size: 9x;
+}
+
+#allergies {
+	color: grey;
 }
 img {
 	height: 32px;
@@ -1024,6 +1028,8 @@ img {
 		width: 160px;
 		margin right: 2%;
 	}
+
+
 }
 /*
 /**********/
