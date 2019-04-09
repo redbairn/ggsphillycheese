@@ -28,8 +28,8 @@ function initMap() {
         //dublin - 53.347861, -6.259329
         // Set up options and styles for map.
         center: {
-            lat: 53.347861,
-            lng: -6.259329
+            lat: 53.327458,
+            lng: -6.235408
         },
         zoom: 11,
         mapTypeControl: false, // Disable Map & Satellite Views.
@@ -89,6 +89,14 @@ function initMap() {
         })(marker, content));
     }
 
+    //resuze 
+
+     google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center);
+        });
+
     // Filter locations by category selected from dropdown menu. 
 
     filterLocations = function(category) {
@@ -98,7 +106,8 @@ function initMap() {
             if (properties.category == category || category.length === 0) {
                 properties.setVisible(true);
                 closeAllInfoWindows(map); // Hide all info windows when selection from dropdown menu changes.
-            } else {
+                //here is where i hit my re-center
+               } else {
                 properties.setVisible(false);
             }
         }

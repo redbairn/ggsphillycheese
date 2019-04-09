@@ -310,13 +310,13 @@ blockquote span{
 		margin-left: 20%;
 		margin-right: 20%;
 		grid-template-rows: 20% 60% 20%;
-		background: #F5842E;  /*Old f29107*/
+		background: #F5842E;  
 		font-family: 'Lato', Arial, sans-serif;
 		font-weight:700;
 		height:100%;
 		color:#353535;
 		text-align:center;
-		border-color:#261a12;/*Old #B85B14*/
+		border-color:#261a12;
 		border-top-width: 0.25px;
 		border-style: solid;
 	}
@@ -335,15 +335,17 @@ blockquote span{
 		margin-top: 10px;
 		margin-bottom: 10px;
 		text-align: center;
+
 	}
 	select { 
-		width: 150px; /*Need to amend*/
+		width: 200px; 
 		font-family: 'Gotham', 'Montserrat', sans-serif;
 		text-align-last: center;
 	}
 	/* Set display preferences for map. */
 	#map {
 		height: 300px;
+		width: 100%;
 	}
 	/* Hide 'Google Maps API's Terms of Use'. */
 	.gmnoprint a,
