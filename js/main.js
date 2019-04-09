@@ -97,7 +97,6 @@ function initMap() {
 
             if (properties.category == category || category.length === 0) {
                 properties.setVisible(true);
-                properties.poistion(this.getPosition());
                 closeAllInfoWindows(map); // Hide all info windows when selection from dropdown menu changes.
             } else {
                 properties.setVisible(false);
@@ -105,6 +104,13 @@ function initMap() {
         }
     }
 
+        //Resize Function
+        google.maps.event.addDomListener(window, "resize", function() {
+            var center = map.getCenter();
+            google.maps.event.trigger(map, "resize");
+            map.setCenter(center);
+        });
+    
     // Close all info windows and open only one that corresponds to when marker is clicked.
 
     function closeAllInfoWindows(map) {
@@ -114,7 +120,4 @@ function initMap() {
     
 
     }
-
-
-
 }

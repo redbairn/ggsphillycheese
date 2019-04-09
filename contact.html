@@ -60,6 +60,7 @@
 		<!-- Google Map -->
 		<div class="col-1"></div>
 		<div class="col-2">
+			<div class="mapHolder">
 			<h2>Google Maps with Markers</h2>
 			<div id="description">The maps show all our locations, if you would like to know what day we are where, please select from the dropdown menu</div>
 			<div id="dropdown">
@@ -72,8 +73,10 @@
 			  </select>
 			</div>
 			<!--Google Map-->
+			
+			<div id="mapContainer"></div>
 			<div id="map"></div>
-
+			</div>	
 			<!-- Contact Form -->
 			<header class="ccheader">
 				<h1>Contact Us</h1>	
@@ -87,9 +90,11 @@
 				<div class="ccfield-prepend">
 					<span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
 					<input class="ccformfield" type="text" placeholder="Surname" required>
-				</div>
+				</div> 
+
+				
 				<div class="ccfield-prepend">
-					<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+					<span class="ccform-addon"><i class="fas fa-allergies"></i></i></span>
 					<select class="ccformfield">
 						<option value="" disabled selected>-Please choose an allergy if applicable-</option>
 						<option value="Cereals containing gluten" >Cereals containing gluten</option>
