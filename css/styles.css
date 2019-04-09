@@ -134,7 +134,7 @@ body {
 }
 .picRight {
 	float: right;
-	margin: 0px 0px 0px 15px;
+	margin: 0px 10px 20px 15px;
 	/*position: relative;*/
 	align-content: right;
 	width: 200px;
@@ -147,6 +147,7 @@ body {
 	align-content: right;
 	width: 200px;
 	height: auto;
+	
 }
 .clearText {
 	clear: both;
@@ -464,41 +465,7 @@ img {
 .social {
 	position: center;
 }
-/*Shop Page*/
-#chalk_board{
-	display: grid;
-	min-height: 80%;
-	width: 80%;
-	grid-template-rows: auto 1fr auto;
-	text-align:center;
-	margin-left:10%;
-	margin-top:10%;
-	background-color: black;
-	border-color: white;
-	border-style: solid;
-}
-#menu_txt{
-	font-family: "kg-noregrets.ketch"; 
-	color: white;
-	letter-spacing: 2px;
-	margin-left: 30px;
-	margin-right: 30px;
-}
-#GGmenu{
-	height: auto;
-	width: 150px;
-}
-#merchtxt{
-	font-family: "lightout";
-	letter-spacing: 2px;
-	font-weight: bold;
-}
-.merch_menu{
-	display: grid;
-	min-height: 80%;
-	width: 80%;
-	grid-template-columns: auto;
-	grid-gap:40%;
+
 
 	/*_Footer Wrapper*/
 	.footer_wrapper {
@@ -619,6 +586,8 @@ img {
 		position: center;
 	}
 	/*Shop Page*/
+	/*Shop Page*/
+
 	#chalk_board{
 		display: grid;
 		min-height: 80%;
@@ -660,6 +629,7 @@ img {
 		font-family: "lightout";
 		letter-spacing: 2px;
 		font-weight: bold;
+
 	}
 	.merch_menu{
 		display: grid;
@@ -670,7 +640,7 @@ img {
 		
 		text-align:center;
 		margin-left:10%;
-		margin-top:20%;
+		margin-top:10%;
 		margin-bottom:10%;
 		background-color: white;
 		border-style: solid;
@@ -868,7 +838,7 @@ img {
 		min-height: 90%;
 		width: 80%;
 		margin-left:10%;
-		margin-top:10%;
+		margin-top:5%;
 		margin-bottom:10%;
 	}
 	#menu_txt{
@@ -949,7 +919,7 @@ img {
 		min-height: 90%;
 		width: 90%;
 		margin-left:5%;
-		margin-top:10%;
+		margin-top:5%;
 		margin-bottom:5%;
 	}
 	
@@ -1051,7 +1021,7 @@ img {
 		min-height: 90%;
 		width: 90%;
 		margin-left:5%;
-		margin-top:10%;
+		margin-top:5%;
 		margin-bottom:5%;
 	}
 	
@@ -1129,7 +1099,7 @@ img {
 		min-height: 90%;
 		width: 90%;
 		margin-left:5%;
-		margin-top:10%;
+		margin-top:5%;
 		margin-bottom:5%;
 	}
 	#menu_txt{
@@ -1208,8 +1178,8 @@ img {
 		min-height: 90%;
 		width: 90%;
 		margin-left:5%;
-		margin-top:10%;
-		margin-bottom:10%;
+		margin-top:5%;
+		margin-bottom:5%;
 	}
 	
 	#menu_txt{
