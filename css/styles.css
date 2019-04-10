@@ -432,8 +432,6 @@ option:selected {
 }
 
 #mapContainer {
-	position: relative;
-	overflow: hidden;
 }
 
 #map {
@@ -445,6 +443,15 @@ option:selected {
     border-radius: 25px;
    
 }
+
+.gm-style {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
 /* Hide 'Google Maps API's Terms of Use'. */
 .gmnoprint a,
 .gmnoprint span,
