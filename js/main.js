@@ -122,3 +122,15 @@ function initMap() {
 
     }
 }
+
+function submitForm() {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyEeA8QsB9u4O_EgAOb1cBWwQxKlGre8K_DxliqwFVNqu6Zr84/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)}, form.reset())
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+}

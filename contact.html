@@ -134,7 +134,7 @@
 					<textarea class="ccformfield" name="comments" rows="5" placeholder="Message*" required></textarea>
 				</div>
 				<div class="ccfield-prepend">
-					<input name="TimeStamp" class="ccbtn" type="submit" value="Submit">
+					<input name="TimeStamp" class="ccbtn" type="submit" value="Submit"  onclick="submitForm()">
 				</div>
 				</form>
 
@@ -142,15 +142,7 @@
 <!-- Source: -->
 <!-- https://github.com/jamiewilson/form-to-google-sheets#7-adding-additional-form-data -->
 				<script>
-					  const scriptURL = 'https://script.google.com/macros/s/AKfycbyEeA8QsB9u4O_EgAOb1cBWwQxKlGre8K_DxliqwFVNqu6Zr84/exec'
-					  const form = document.forms['submit-to-google-sheet']
 
-					  form.addEventListener('submit', e => {
-					    e.preventDefault()
-					    fetch(scriptURL, { method: 'POST', body: new FormData(form)}, form.reset())
-					      .then(response => console.log('Success!', response))
-					      .catch(error => console.error('Error!', error.message))
-					  })
 				</script>
 
 
