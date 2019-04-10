@@ -141,6 +141,15 @@ body {
 	width: 200px;
 	height: auto;
 }
+.picCenter {
+	float: center;
+	margin: 0 15px 0px 0px;
+	/*position: relative;*/
+	align-content: center;
+	width: 200px;
+	height: auto;
+	
+}
 .picLeft {
 	float: left;
 	margin: 0 15px 0px 0px;
