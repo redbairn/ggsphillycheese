@@ -17,10 +17,10 @@ function initMap() {
     // Create an array of locations, all coordinates are  general ones from Google Maps.
 
     var locations = [
-        ["0", "Central Park, Sandyford", image, 53.270239, -6.203806, "Wednesday"],
-        ["1", "Merrion Square", image, 53.339638, -6.249067, "Thursday"],
-        ["2", "Clontarf Red Stables", image, 53.369157, -6.175849 , "Saturday"],
-        ["3", "Herbert Park", image,53.327458, -6.235408,  "Sunday"]
+        ["0", "<b>Central Park,</b><br/>Sandyford<br/><i>Wednesday 11am-2pm</i>", image, 53.270239, -6.203806, "Wednesday"],
+        ["1", "<b>Merrion Square,</b><br/>Dublin 4<br/><i>Thursday 11am-3pm</i>", image, 53.339638, -6.249067, "Thursday"],
+        ["2", "<b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i>Saturday 10am-4pm</i>", image, 53.369157, -6.175849 , "Saturday"],
+        ["3", "<b>Herbert Park</b><br/>Dublin 6<br/><i>Sunday 10am-4pm</i>", image,53.327458, -6.235408,  "Sunday"]
     ];
 
     // Create a map.
