@@ -5,25 +5,63 @@ function dayOfWeekLocationAdd() {
   var day = new Date();
   var number = day.getDay();
   var time  = day.getHours();
-  var text;
+  var advert;
  
- if(number==1 ||number==2) { //monday&tuesday
-    text="Check us out on Wednesday - Central Park Sandyford: 11am-2pm"
- } else if(number==3) { //wednesday
-    text="Check us out In Central Park Sandyford: 11am-2pm"
- } else if(number==4){ //thursday
-    text="Check us out In Merrion Square: 11am-3pm"
- } else if(number==5){ //friday
-    text="Check us out In Clontarf on Saturday 10am-4pm"
- } else if(number==6){ //saturday
-    text="Check us out In Clontarf Red Stables: 10am-4pm"
- } else { //sunday
-    text="Check us out In Herbert Park: 10am - 4pm"
- }
-//return text;
-document.getElementById("advert").innerHTML = text;
+switch(new Date().getDay()) {
+    //Sunday
+    case 0: 
+     if (time<16) {
+        advert="Check us out Today Sunday, In Herbert Park: 10am - 4pm";
+        break;
+    } else {
+        advert="Check us out on Wednesday - Central Park Sandyford: 11am-2pm";
+        break
+    }
+     //Monday
+    case 1:
+     advert="Check us out on Wednesday - Central Park Sandyford: 11am-2pm";
+      break;
+     //Tuesday
+    case 2:
+    advert="Check us out on Wednesday - Central Park Sandyford: 11am-2pm";
+      break;
+    //Wednesday
+    case 3: 
+    if (time<14) {
+        advert="Check us out Today Wednesday Central Park Sandyford: 11am-2pm";
+        break;
+    } else {
+        advert="Check us out on Thursday In Merrion Square: 11am-3pm";
+        break
+    }
+    //Thursday
+    case 4: 
+    if (time<15) {
+        advert="Check us out Today Thursday In  Merrion Square: 11am - 3pm";
+        break;
+    } else {
+        advert="Check us out In Clontarf on Saturday 10am-4pm";
+        break
+    }
+     //Friday
+    case 5:
+     advert="Check us out In Clontarf on Saturday 10am-4pm";
+        break;
+     //Saturday
+    case 6:
+    if (time<16) {
+        advert="Check Us today Saturday  Clontarf Red Stables: 10am - 4pm";
+        break;
+    } else {
+        advert="Check us On Sunday In Herbert Park: 10am - 4pm";
+        break
+    }
+
 }
- 
+
+document.getElementById("advert").innerHTML = advert;
+}
+
 // Contacts Page Jscript
 // Google Maps
 

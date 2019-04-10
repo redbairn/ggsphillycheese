@@ -221,7 +221,9 @@ body {
 /*_Dropdown-Nav*/
 /*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
 #top_nav a:hover, a:active { 
-	color:#3d3d3d; 
+	color:#3d3d3d;
+
+
 }
 #top_nav ul {
 	background: #e6e6e6;
@@ -238,6 +240,10 @@ body {
 	position: relative;
 	text-decoration: none;
 	transition-duration: 0.5s;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 #top_nav li:hover,
 #top_nav li:focus-within {
