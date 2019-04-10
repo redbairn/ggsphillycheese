@@ -943,8 +943,8 @@ img {
 	.footer_wrapper {
 		display:grid;
 		min-height: 100%;
-		margin-left: 20%;
-		margin-right: 20%;
+		margin-left: 0;
+		margin-right: 0;
 		grid-template-rows: 20% 60% 20%;
 		font-size:0.9em;
 		height:100%;
