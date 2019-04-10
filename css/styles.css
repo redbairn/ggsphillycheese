@@ -193,6 +193,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+.textLeft{
+	margin-right:10%;
+}
+.textRight{
+	margin-left:10%;
+}
+.main h2{
+	text-align:center;
+}
+
 /*Reviews*/
 .reviews{
 	margin-top:10%;
