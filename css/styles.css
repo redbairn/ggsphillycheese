@@ -242,8 +242,6 @@ body {
 	transition-duration: 0.5s;
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
 }
 #top_nav li:hover,
 #top_nav li:focus-within {
@@ -663,6 +661,8 @@ img {
 	border-style: solid;
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 
 #menu_txt{
