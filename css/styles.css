@@ -130,8 +130,8 @@ body {
 .main {
 	font-weight: 400;
 	font-size: 1em;
-	margin:0 auto;
 	padding-bottom:60px;
+	width:100%;
 }
 .picRight {
 	float: right;
@@ -762,7 +762,6 @@ img {
 		margin-left:20%;
 		margin-right:20%;
 		grid-template-rows: 20% 60% 20%;
-		font-size:1.5em;
 	}
 	.content_wrapper {
 		display: grid;
@@ -807,7 +806,6 @@ img {
 	smaller screens!
 	*/
 	.site-content {
-		font-size:1.5em;
 		margin-left:20%;
 		margin-right:20%;
 		grid-template-rows: 20% 60% 20%;
@@ -857,7 +855,6 @@ img {
 		font-size: 1.5em;
 		margin-left: 20%;*/
 	.site-content {
-	
 		margin-left:10%;
 		margin-right:10%;
 		grid-template-rows: 20% 60% 20%;
@@ -1205,14 +1202,24 @@ img {
 		display: grid;
 		flex: 1 0 auto; /* 2 */
 		padding: 0;
-		margin-left:5%;
-		margin-right:5%;
+		margin-left:0;
+		margin-right:0;
 		grid-template-rows: 10% 80% 10%;
 	}
 	.content_wrapper {
 		display: grid;
 		flex: 1 0 auto; /* 2 */
 		grid-template-rows: 10% 80% 10%;
+		margin-left:0;
+		margin-right:0;
+	}
+	/*Homepage*/
+	.main {
+		width:50%;
+	}
+	
+	blockquote{
+		width:90%;
 		margin-left:5%;
 		margin-right:5%;
 	}
@@ -1260,8 +1267,8 @@ img {
 	.footer_wrapper {
 		display:grid;
 		min-height: 100%;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 0;
+		margin-right: 0;
 		grid-template-rows: 20% 60% 20%;
 		font-size:0.9em;
 		height:100%;
