@@ -208,6 +208,10 @@ body {
 	margin-top:10%;
 	margin-bottom:10%;
 }
+/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
+.fb-post {
+  width: 500px; /*Betweem 350-750px*/
+}
 
 /*Navigation*/
 #top_nav{
@@ -964,8 +968,8 @@ img {
 	.footer_wrapper {
 		display:grid;
 		min-height: 100%;
-		margin-left: 20%;
-		margin-right: 20%;
+		margin-left: 0;
+		margin-right: 0;
 		grid-template-rows: 20% 60% 20%;
 		font-size:0.9em;
 		height:100%;
