@@ -208,6 +208,10 @@ body {
 	margin-top:10%;
 	margin-bottom:10%;
 }
+/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
+.fb-post {
+  width: 500px; /*Betweem 350-750px*/
+}
 
 /*Navigation*/
 #top_nav{
