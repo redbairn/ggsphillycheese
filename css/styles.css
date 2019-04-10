@@ -221,7 +221,8 @@ body {
 /*_Dropdown-Nav*/
 /*_Ref: https://css-tricks.com/solved-with-css-dropdown-menus/ */
 #top_nav a:hover, a:active { 
-	color:#3d3d3d; 
+	color:#3d3d3d;
+
 
 }
 #top_nav ul {
