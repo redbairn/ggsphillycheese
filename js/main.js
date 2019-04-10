@@ -1,3 +1,29 @@
+
+//HomePage
+function dayOfWeekLocationAdd() {
+
+  var day = new Date();
+  var number = day.getDay();
+  var time  = day.getHours();
+  var text;
+ 
+ if(number==1 ||number==2) { //monday&tuesday
+    text="Check us out on Wednesday - Central Park Sandyford: 11am-2pm"
+ } else if(number==3) { //wednesday
+    text="Check us out In Central Park Sandyford: 11am-2pm"
+ } else if(number==4){ //thursday
+    text="Check us out In Merrion Square: 11am-3pm"
+ } else if(number==5){ //friday
+    text="Check us out In Clontarf on Saturday 10am-4pm"
+ } else if(number==6){ //saturday
+    text="Check us out In Clontarf Red Stables: 10am-4pm"
+ } else { //sunday
+    text="Check us out In Herbert Park: 10am - 4pm"
+ }
+//return text;
+document.getElementById("advert").innerHTML = text;
+}
+ 
 // Contacts Page Jscript
 // Google Maps
 
@@ -14,10 +40,10 @@ function initMap() {
 
     // Create an array of locations, all coordinates are  general ones from Google Maps.
     var locations = [
-        ["0", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Central Park,</b><br/>Sandyford<br/><i>Wednesday 11am-2pm</i></div>", image, 53.270239, -6.203806, "Wednesday"],
-        ["1", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Merrion Square,</b><br/>Dublin 4<br/><i>Thursday 11am-3pm</i></div>", image, 53.339638, -6.249067, "Thursday"],
-        ["2", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i>Saturday 10am-4pm</i></div>", image, 53.369157, -6.175849 , "Saturday"],
-        ["3", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Herbert Park</b><br/>Dublin 6<br/><i>Sunday 10am-4pm</i></div>", image,53.327458, -6.235408,  "Sunday"]
+        ["0", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Central Park,</b><br/>Sandyford<br/><i style='color:blue;'>Wednesday 11am-2pm</i></div>", image, 53.270239, -6.203806, "Wednesday"],
+        ["1", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Merrion Square,</b><br/>Dublin 4<br/><i style='color:blue;'>Thursday 11am-3pm</i></div>", image, 53.339638, -6.249067, "Thursday"],
+        ["2", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i style='color:blue;'>Saturday 10am-4pm</i></div>", image, 53.369157, -6.175849 , "Saturday"],
+        ["3", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Herbert Park</b><br/>Dublin 6<br/><i style='color:blue;'>Sunday 10am-4pm</i></div>", image,53.327458, -6.235408,  "Sunday"]
     ];
 
     // Create a map.
@@ -97,6 +123,7 @@ function initMap() {
 
             if (properties.category == category || category.length === 0) {
                 properties.setVisible(true);
+                closeAllInfoWindows(map);
                 map.panTo(properties.position); //change position on focus change
                 closeAllInfoWindows(map); // Hide all info windows when selection from dropdown menu changes.
             } else {
@@ -121,6 +148,7 @@ function initMap() {
     }
 }
 
+// Form Submit
  // Source: 
 // https://github.com/jamiewilson/form-to-google-sheets#7-adding-additional-form-data 
 function submitForm() {
