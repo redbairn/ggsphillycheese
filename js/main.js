@@ -123,7 +123,7 @@ function initMap() {
 
         var marker = new google.maps.Marker({
             map: map,
-            title: title,
+            // title: title,
             icon: icon,
             position: position,
             category: category,
