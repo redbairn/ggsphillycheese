@@ -118,14 +118,14 @@ function initMap() {
         markers.forEach(function(marker) {
             marker.infowindow.close(map, marker);
         });
-    
-
     }
 }
 
+ // Source: 
+// https://github.com/jamiewilson/form-to-google-sheets#7-adding-additional-form-data 
 function submitForm() {
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyEeA8QsB9u4O_EgAOb1cBWwQxKlGre8K_DxliqwFVNqu6Zr84/exec'
-  const form = document.forms['submit-to-google-sheet']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyEeA8QsB9u4O_EgAOb1cBWwQxKlGre8K_DxliqwFVNqu6Zr84/exec'
+        const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()

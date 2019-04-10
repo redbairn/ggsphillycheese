@@ -98,11 +98,12 @@
 
 				<div class="ccfield-prepend">
 					<span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-					<input name="Email" class="ccformfield" type="text" placeholder="Email*" required>
+					<input name="Email" class="ccformfield" type="email" placeholder="Email*" required>
 				</div>
-				<div class="ccfield-prepend">
-					<span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
-					<input name="Phone" class="ccformfield" type="text" placeholder="Phone">
+				<div class="ccfield-prepend"> 
+					<!--  fa-mobile-phone -->
+					<span class="ccform-addon"><i class="fa fa-mobile-alt fa-2x"></i></span>
+					<input name="Phone" class="ccformfield" type="tel" pattern="[0-9]{3}-[0-9]{7}" placeholder="Mobile Phone Number*">
 				</div>
 								<div class="ccfield-prepend">
 					<span class="ccform-addon"><i class="fas fa-allergies fa-2x"></i></i></span>
@@ -137,14 +138,6 @@
 					<input name="TimeStamp" class="ccbtn" type="submit" value="Submit"  onclick="submitForm()">
 				</div>
 				</form>
-
-
-<!-- Source: -->
-<!-- https://github.com/jamiewilson/form-to-google-sheets#7-adding-additional-form-data -->
-				<script>
-
-				</script>
-
 
 			</div><!--End of Contact Wrapper-->
 		</div><!--End of Col-2-->
