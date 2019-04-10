@@ -388,7 +388,7 @@ footer{
 select { 
 	width: 300px; /*Need to amend*/
 	font-family: 'Gotham', 'Montserrat', sans-serif;
-	text-align-last: left;
+	text-align: left;
 }
 
 select, option {
@@ -564,7 +564,7 @@ img {
 select { 
 	width: 150px; /*Need to amend*/
 	font-family: 'Gotham', 'Montserrat', sans-serif;
-	text-align-last: center;
+	text-align: left;
 }
 /* Set display preferences for map. */
 #map {
