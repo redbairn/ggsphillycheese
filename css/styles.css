@@ -82,8 +82,9 @@ blockquote span{
 	url("fonts/Copasetic_NF.ttf") format("truetype"),
 	url("fonts/Copasetic_NF.svg#CopaseticNF") format("svg");
 	font-weight:normal;
-	font-style:normal;
+	/*font-style:normal;*/
 }
+
 @font-face {
 	font-family:"kg-noregrets.ketch";
 	src:url("fonts/kg-no-regrets.ketch.ttf") format("truetype");
@@ -134,7 +135,7 @@ body {
 }
 .picRight {
 	float: right;
-	margin: 0px 10px 20px 15px;
+	margin: 0 10px 20px 15px;
 	/*position: relative;*/
 	align-content: right;
 	width: 200px;
@@ -142,7 +143,7 @@ body {
 }
 .picLeft {
 	float: left;
-	margin: 0px 15px 0px 0px;
+	margin: 0 15px 0px 0px;
 	/*position: relative;*/
 	align-content: right;
 	width: 200px;
@@ -336,9 +337,6 @@ footer{
 	font-family: 'Gotham', 'Montserrat', sans-serif;
 }
 
-
-
-
 /*_Footer Wrapper*/
 .footer_wrapper {
 	display:grid;
@@ -373,37 +371,55 @@ footer{
 	text-align: center;
 }
 select { 
-	width: 150px; /*Need to amend*/
+	width: 300px; /*Need to amend*/
 	font-family: 'Gotham', 'Montserrat', sans-serif;
 	text-align-last: left;
 }
+
+select, option {
+    text-align: Left;
+}
+
+span {
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
 input, select, textarea {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	outline: none ! important; 
+	/*Chrome blue box removed*/
 }
+
 option:selected {
   color:#D3D3D3;
 }
+
 /* Set display preferences for map. */
 
 #mapHolder {
-  width: 90%;
+  width: auto;
   margin: 0 auto;
   margin-top:50px;
+  overflow: hidden;
 
 }
 
 #mapContainer {
 	position: relative;
+	overflow: hidden;
 }
 
 #map {
 	height: 0;
     overflow: hidden;
-    padding-bottom: 42.25%;
-    padding-top: 30px;
+    padding-bottom: 32.25%;
+    padding-top: 40px;
     position: relative;
+    border-radius: 25px;
+   
 }
 /* Hide 'Google Maps API's Terms of Use'. */
 .gmnoprint a,
@@ -432,9 +448,14 @@ option:selected {
 textarea {
 	resize: none;
 }
+
+.contact_wrapper {
+	width: 90%;	
+}
 .ccform {
 	margin: 0 auto;
 	width: 90%;
+	position: relative;
 }
 .ccfield-prepend{
 	margin-bottom:10px;
@@ -457,6 +478,9 @@ textarea {
 	display:block;
 	font-family: 'Lato',Arial,sans-serif;
 	font-size:14px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 .ccformfield {
 	font-family: 'Lato',Arial,sans-serif;
@@ -475,17 +499,15 @@ textarea {
 	background:#d8850e;
 }
 
-.fa-allergies {
-	size: 9x;
-}
-
 #allergies {
 	color: grey;
+
 }
 img {
 	height: 32px;
 	width: 32px;
 }
+
 .social {
 	position: center;
 }
@@ -677,7 +699,7 @@ img {
 		margin-bottom:10%;
 	}
 
-}/*End of General */
+/*End of General */
 
 
 /******************/
