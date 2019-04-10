@@ -689,8 +689,8 @@ img {
 	border-bottom-left-radius: 25px;
 }
 .merch_items{
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 }
 .button{
 	margin-bottom:10%;
@@ -734,8 +734,8 @@ img {
 		height: auto;
 		width: 250px;
 	}
-	#merchtxt{
-		font-size: 1.2em;
+	.merch_menu{
+		font-size: 2.5em;
 	}
 
 	.merch_items{
@@ -784,7 +784,7 @@ img {
 		width: 250px;
 	}
 	.merch_menu{
-		font-size: 1.8em;
+		font-size: 2.5em;
 	}	
 	.merch_items{
 	height: 250px;
@@ -825,7 +825,7 @@ img {
 		width: 250px;
 	}
 	.merch_menu{
-		font-size: 1.8em;
+		font-size: 2em;
 	}	
 	
 	.merch_items{
@@ -901,7 +901,7 @@ img {
 	}
 	
 	.merch_menu{
-		font-size: 1.6em;
+		font-size: 2em;
 	}	
 	.merch_items{
 		height: 200px;
@@ -966,7 +966,7 @@ img {
 		
 	}
 	.merch_menu{
-		font-size: 1.2em;	
+		font-size: 1.8em;	
 		min-height: 90%;
 		width: 90%;
 		margin-left:5%;
@@ -1074,7 +1074,7 @@ img {
 		margin-left:5%;
 		margin-top:5%;
 		margin-bottom:5%;
-		font-size: 0.9em;
+		font-size: 1.5em;
 	}
 	
 	#menu_txt{
@@ -1161,7 +1161,7 @@ img {
 		margin-left:5%;
 		margin-top:5%;
 		margin-bottom:5%;
-		font-size: 0.9em;
+		font-size: 1.5em;
 	}
 	#merchtxt{
 		font-size: 1em;
@@ -1246,7 +1246,7 @@ img {
 		margin-left:5%;
 		margin-top:5%;
 		margin-bottom:5%;
-		font-size: 0.9em;
+		font-size: 1.5em;
 	}
 
 	.merch_items{
