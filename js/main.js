@@ -163,6 +163,7 @@ function initMap() {
                 properties.setVisible(true);
                 closeAllInfoWindows(map);
                 map.panTo(properties.position); //change position on focus change
+                map.setZoom(11); //zooms back out 11 when you change the form
                 closeAllInfoWindows(map); // Hide all info windows when selection from dropdown menu changes.
             } else {
                 properties.setVisible(false);
