@@ -635,6 +635,20 @@ textarea {
 .ccformfield {
 	font-family: 'Lato',Arial,sans-serif;
 }
+
+input[type=radio] {
+  display: inline;
+}
+
+.rfield {
+	color:#000000; 
+	background:#FFFFFF;
+	border:none;
+	padding:35.5px;
+	font-family: 'Lato',Arial,sans-serif;
+	font-size:35px;
+	display: block;
+}
 .ccbtn{
 	display:block;
 	border:none;

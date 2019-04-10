@@ -78,10 +78,10 @@ function initMap() {
 
     // Create an array of locations, all coordinates are  general ones from Google Maps.
     var locations = [
-        ["0", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Central Park,</b><br/>Sandyford<br/><i style='color:blue;'>Wednesday 11am-2pm</i></div>", image, 53.270239, -6.203806, "Wednesday"],
-        ["1", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Merrion Square,</b><br/>Dublin 4<br/><i style='color:blue;'>Thursday 11am-3pm</i></div>", image, 53.339638, -6.249067, "Thursday"],
-        ["2", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i style='color:blue;'>Saturday 10am-4pm</i></div>", image, 53.369157, -6.175849 , "Saturday"],
-        ["3", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Address/Time</b><br/><b>Herbert Park</b><br/>Dublin 6<br/><i style='color:blue;'>Sunday 10am-4pm</i></div>", image,53.327458, -6.235408,  "Sunday"]
+        ["0", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Central Park,</b><br/>Sandyford<br/><i style='color:blue;'>Wednesday 11am-2pm</i></div>", image, 53.270239, -6.203806, "Wednesday"],
+        ["1", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Merrion Square,</b><br/>Dublin 4<br/><i style='color:blue;'>Thursday 11am-3pm</i></div>", image, 53.339638, -6.249067, "Thursday"],
+        ["2", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i style='color:blue;'>Saturday 10am-4pm</i></div>", image, 53.369157, -6.175849 , "Saturday"],
+        ["3", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Herbert Park</b><br/>Dublin 6<br/><i style='color:blue;'>Sunday 10am-4pm</i></div>", image,53.327458, -6.235408,  "Sunday"]
     ];
 
     // Create a map.
