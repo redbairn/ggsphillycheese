@@ -134,18 +134,18 @@
 				</div>
 				<div class="ccfield-prepend">
 					<span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
-					<textarea class="ccformfield" name="comments" rows="5" placeholder="Message*" required></textarea>
+					<textarea name="comments" class="ccformfield"  rows="5" placeholder="Message*" required></textarea>
 				</div>
 								<!-- Radio buttons -->
 				 <!-- <div class="ccfield-prepend">
 				 <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span> -->
-				<input type="radio" name="Contact-method" class="rfield" value="Email"> Email
+				<input type="radio" name="Contact-method" class="rfield" value="Email"> Email<br/>
   				<input type="radio" name="Contact-method" class="rfield" value="Text"> Text
-  				<!-- <input type="radio" name="gender" class="rfield" value="other"> Ot -->
+  				
 
   			</div>
 				<div class="ccfield-prepend">
-					<input class="ccbtn" type="submit" value="Submit"  onclick="submitForm(); alert('Message Submitted');" />
+					<input class="ccbtn" type="submit" value="Submit"  onclick="submitForm()" />
 				</div>
 				</form>
 
