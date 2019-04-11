@@ -179,7 +179,6 @@ function initMap() {
         });
     
     // Close all info windows and open only one that corresponds to when marker is clicked.
-
     function closeAllInfoWindows(map) {
         markers.forEach(function(marker) {
             marker.infowindow.close(map, marker);
@@ -190,8 +189,10 @@ function initMap() {
 // Form Submit
  // Source: 
 // https://github.com/jamiewilson/form-to-google-sheets#7-adding-additional-form-data 
+
+
 function submitForm() {
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyEeA8QsB9u4O_EgAOb1cBWwQxKlGre8K_DxliqwFVNqu6Zr84/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxe45MPoiCwj0YkVNZEdLUx1_gmQIN-WdwzXW6U-tx1FCIav5bO/exec'
         const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
