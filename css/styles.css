@@ -385,6 +385,13 @@ footer{
 /*ContactPage Css*/
 /*_Google Map*/
 /*_Set display preferences for description. */
+#contactForm{
+	display:grid;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-rows: 10% 80% 10%;
+}
 #description {
 	margin: 0% 5% 0% 5%;
 	font-family: 'Gotham', 'Montserrat', sans-serif;
@@ -472,11 +479,6 @@ option:selected {
 	background: #EEEEEE !important;
 }
 /*Contact form*/
-#contactForm{
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
 .ccheader {
 	margin: 0 auto;
 	padding: 2em;
