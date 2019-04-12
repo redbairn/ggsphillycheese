@@ -727,7 +727,7 @@ img {
 	margin-top: 5%;
 	font-size: 2em;
 	text-align:center;
-	margin-left:10%;
+	margin-left:10%;/
 	margin-top:10%;
 	margin-bottom:10%;
 	background-color: white;
@@ -741,9 +741,13 @@ img {
 	height: 200px;
 	width: 200px;
 }
-.button{
-	margin-bottom:10%;
+#product3{
+	margin-bottom: 10%;
 }
+.buyNow{
+	margin-left: 6%;
+}
+
 /*End of General */
 
 
@@ -788,11 +792,8 @@ img {
 	}
 
 	.merch_items{
-		height: 250px;
+		height: auto;
 		width: 250px;
-	}
-	.button{
-		margin-bottom:10%;
 	}
 	/*_Footer Wrapper*/
 	.footer_wrapper {
@@ -844,13 +845,11 @@ img {
 		font-size: 2.5em;
 	}	
 	.merch_items{
-	height: 250px;
+	height: auto;
 	width: 250px;
 	margin-top: 5%;
 	}
-	.button{
-		margin-bottom:10%;
-	}
+
 }/* min-width 1600px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 	
@@ -883,13 +882,11 @@ img {
 	}	
 	
 	.merch_items{
-		height: 200px;
+		height: auto;
 		width: 200px;
 		
 	}
-	.button{
-		margin-bottom:10%;
-	}
+
 }/* min-width 1441px and max-width 1600px, use when QAing xlarge screen-only issues */
 
 /**********/
@@ -958,12 +955,10 @@ img {
 		font-size: 2em;
 	}	
 	.merch_items{
-		height: 200px;
+		height: auto;
 		width: 200px;
 	}
-	.button{
-		margin-bottom:10%;
-	}
+
 	/*_Footer Wrapper*/
 	.footer_wrapper {
 		display:grid;
@@ -1039,11 +1034,11 @@ img {
 	}
 	
 	.merch_items{
-		height: 150px;
+		height: auto;
 		width: 150px;
 	}
-	.button{
-		margin-bottom:10%;
+	.buyNow{
+		margin-left: 8%;
 	}
 
 	.nomobile{
@@ -1074,7 +1069,9 @@ img {
 		margin right: 2%;
 	}
 
-
+	.buyNow{
+		margin-left: 8%;
+	}
 }
 /*
 /**********/
@@ -1111,7 +1108,9 @@ img {
 		margin-left:5%;
 		margin-right:5%;
 	}
-	
+	.buyNow{
+		margin-left: 8%;
+	}
 	/*Shop Page*/
 	
 	#chalk_board{
@@ -1137,14 +1136,13 @@ img {
 		height: auto;
 		width: 200px;
 	}
-
 	
 	.merch_items{
-		height: 150px;
+		auto;
 		width: 150px;
 	}
-	.button{
-		margin-bottom:10%;
+	.buyNow{
+		margin-left: 10%;
 	}
 	.nomobile{
 		display:none;
@@ -1221,12 +1219,13 @@ img {
 	}
 	
 	.merch_items{
-		height: 150px;
+		height: auto;
 		width: 150px;
 	}
-	.button{
-		margin-bottom:10%;
+	.buyNow{
+		margin-left: 10%;
 	}
+
 	/*_Footer Wrapper*/
 	.footer_wrapper {
 		display:grid;
@@ -1302,15 +1301,16 @@ img {
 	}
 
 	.merch_items{
-		height: 150px;
+		height: auto;
 		width: 150px;
 	}
 	#merchtxt{
 		font-size: 1em;
 	}
-	.button{
-		margin-bottom:10%;
+	.buyNow{
+		margin-left: 10%;
 	}
+
 	.nomobile{
 		display:none;
 	}
