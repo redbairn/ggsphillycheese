@@ -385,6 +385,11 @@ footer{
 /*ContactPage Css*/
 /*_Google Map*/
 /*_Set display preferences for description. */
+#contactsPage{
+	display: grid;
+	min-height: 100%;
+	grid-template-rows: 0% 100% 0%;
+}
 #contactForm{
 	display:grid;
 	min-height: 100%;
@@ -1293,7 +1298,7 @@ img {
 	smaller screens!
 	*/
 	#logo_img {
-		width: 160px;
+		width: 150px;
 	}
 	#logo_txt{
 		font-size: 100%;
@@ -1380,5 +1385,11 @@ img {
 		height:100%;
 	}
 	
+}
+@media screen and (max-width: 374px) { 
+	#logo_img {
+			width: 100px;
+			margin-left: 5%;
+	}
 }/*End of Media Queries*/
 
