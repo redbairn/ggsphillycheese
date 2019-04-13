@@ -112,106 +112,6 @@ blockquote span{
 	text-align:center;
 }
 
-/***************/
-/*2-DESKTOPS***/
-/*************/
-
-
-/*Body*/
-body {
-	font-weight: 400;
-	font-size: 1em;
-	font-family: 'Lato', Arial, sans-serif;
-	margin:0 auto;
-	padding:0;
-	background-color: #E6E6E6;
-}
-/*Homepage*/
-.main {
-	font-weight: 400;
-	font-size: 1em;
-	padding-bottom:60px;
-	width:100%;
-}
-.picRight {
-	float: right;
-	margin: 0 10px 20px 15px;
-	/*position: relative;*/
-	align-content: right;
-	width: 200px;
-	height: auto;
-}
-.picCenter {
-	float: center;
-	margin: 0 15px 0px 0px;
-	/*position: relative;*/
-	align-content: center;
-	width: 200px;
-	height: auto;
-	
-}
-.picLeft {
-	float: left;
-	margin: 0 15px 0px 0px;
-	/*position: relative;*/
-	align-content: right;
-	width: 200px;
-	height: auto;
-	
-}
-.clearText {
-	clear: both;
-}
-/*_Wrappers for sections_*/
-.first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.third {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fourth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fifth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sixth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.textLeft{
-	margin-right:10%;
-}
-.textRight{
-	margin-left:10%;
-}
-.main h2{
-	text-align:center;
-}
-
-/*Reviews*/
-.reviews{
-	margin-top:10%;
-	margin-bottom:10%;
-}
-/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
-.fb-post {
-  width: 500px; /*Betweem 350-750px*/
-}
 
 /*Navigation*/
 #top_nav{
@@ -313,6 +213,115 @@ body {
 	font-size: 240%;
 	line-height:50px;
 }
+
+/***************/
+/*2-DESKTOPS***/
+/*************/
+
+
+/*Body*/
+body {
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Lato', Arial, sans-serif;
+	margin:0 auto;
+	padding:0;
+	background-color: #E6E6E6;
+}
+/*Homepage*/
+.main {
+	font-weight: 400;
+	font-size: 1em;
+	padding-bottom:60px;
+	width:100%;
+}
+.picRight {
+	float: right;
+	margin: 0 10px 20px 15px;
+	/*position: relative;*/
+	align-content: right;
+	width: 200px;
+	height: auto;
+}
+.picCenter {
+	float: center;
+	margin: 0 15px 0px 0px;
+	/*position: relative;*/
+	align-content: center;
+	width: 200px;
+	height: auto;
+	
+}
+.picLeft {
+	float: left;
+	margin: 0 15px 0px 0px;
+	/*position: relative;*/
+	align-content: right;
+	width: 200px;
+	height: auto;
+	
+}
+.clearText {
+	clear: both;
+}
+/*_Wrappers for sections_*/
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fifth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sixth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textLeft{
+	margin-right:10%;
+}
+.textRight{
+	margin-left:10%;
+}
+.main h2{
+	text-align:center;
+}
+
+/*Reviews*/
+.reviews{
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
+img {
+	height: 32px;
+	width: 32px;
+}
+
+/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
+.fb-post {
+  width: 500px; /*Betweem 350-750px*/
+}
+
+
 /*Footer*/
 footer{
 	left: 0;
@@ -385,18 +394,14 @@ footer{
 /*ContactPage Css*/
 /*_Google Map*/
 /*_Set display preferences for description. */
-#contactsPage{
-	display: grid;
-	min-height: 100%;
-	grid-template-rows: 0% 100% 0%;
+#mapDescription {
+	margin: 10px 5% 0% 5%;
+	font-family: 'Gotham', 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.45em;
 }
-#contactForm{
-	display:grid;
-	min-height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	grid-template-rows: 10% 80% 10%;
-}
+
 #description {
 	margin: 0% 5% 0% 5%;
 	font-family: 'Gotham', 'Montserrat', sans-serif;
@@ -408,35 +413,24 @@ footer{
 #dropdown {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	text-align: center;
-
+	/*text-align: center;*/
 }
+
 select { 
-	width: 300px; /*Need to amend*/
+	width: 250px; /*Need to amend*/
 	font-family: 'Gotham', 'Montserrat', sans-serif;
-	text-align: left;
+	
+}
+
+/*come back to here and fix this*/
+#locations {
+	text-align: center;
 }
 
 select, option {
-    text-align: Left;
+    text-align: center;
 }
 
-span {
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
-}
-
-input, select, textarea {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	outline: none ! important; 
-	/*Chrome blue box removed*/
-}
-
-option:selected {
-  color:#D3D3D3;
-}
 
 /* Set display preferences for map. */
 
@@ -444,7 +438,6 @@ option:selected {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 #mapContainer {
@@ -460,8 +453,7 @@ option:selected {
     padding-top: 40px;
     position: relative;
     border-radius: 25px;
-	width: auto;
-   
+	width: auto; 
 }
 
 .gm-style {
@@ -470,7 +462,7 @@ option:selected {
         left: 0;
         width: 100% !important;
         height: 100% !important;
-    }
+}
 
 /* Hide 'Google Maps API's Terms of Use'. */
 .gmnoprint a,
@@ -481,9 +473,24 @@ option:selected {
 }
 /* Set background color of zoom buttons. */
 .gmnoprint div {
-	background: #EEEEEE !important;
+	background: #f28530 !important;
 }
+
+button.gm-control-active.gm-fullscreen-control {
+	background: #f28530 !important;
+}
+
 /*Contact form*/
+
+#contactForm{
+	display:grid;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-rows: 10% 80% 10%;
+}
+
+
 .ccheader {
 	margin: 0 auto;
 	padding: 2em;
@@ -496,17 +503,15 @@ option:selected {
 	line-height: 1.3;
 }
 /* Form CSS*/
-textarea {
-	resize: none;
-}
 
 .contact_wrapper {
-	width: 90%;	
+	width: 100%;	
 }
 .ccform {
 	margin: 0 auto;
 	width: 90%;
 	position: relative;
+	padding-left: 5%;
 }
 .ccfield-prepend{
 	margin-bottom:10px;
@@ -514,9 +519,10 @@ textarea {
 }
 .ccform-addon{
 	color:#f8ae45; 
+	display: block;	
 	float:left;
 	padding:8px;
-	width:8%;
+	width:10%;
 	background:#FFFFFF;
 	text-align:center;  
 }
@@ -524,8 +530,8 @@ textarea {
 	color:#000000; 
 	background:#FFFFFF;
 	border:none;
-	padding:15.5px;
-	width: auto;
+	padding:25.5px;
+	width: 90%;
 	display:block;
 	font-family: 'Lato',Arial,sans-serif;
 	font-size:14px;
@@ -554,9 +560,23 @@ textarea {
 	color: grey;
 
 }
-img {
-	height: 32px;
-	width: 32px;
+
+
+span {
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+input, select, textarea {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: none ! important; 
+	/*Chrome blue box removed*/
+}
+
+textarea {
+	resize: none;
 }
 
 .social {
@@ -580,123 +600,6 @@ img {
 	border-color:#261a12;/*Old #B85B14*/
 	border-top-width: 0.25px;
 	border-style: solid;
-}
-/*ContactPage Css*/
-/*_Google Map*/
-/*_Set display preferences for description. */
-#description {
-	margin: 10px 5% 0% 5%;
-	font-family: 'Gotham', 'Montserrat', sans-serif;
-	font-size: 12px;
-	text-align: center;
-	line-height: 1.45em;
-}
-/* Set display preferences for dropdown menu. */
-#dropdown {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-select { 
-	width: 150px; /*Need to amend*/
-	font-family: 'Gotham', 'Montserrat', sans-serif;
-	text-align: left;
-}
-/* Set display preferences for map. */
-#map {
-	height: 300px;
-}
-/* Hide 'Google Maps API's Terms of Use'. */
-.gmnoprint a,
-.gmnoprint span,
-.gmnoprint.gm-style-cc,
-.gm-style-cc {
-	display: none !important;
-}
-/* Set background color of zoom buttons. */
-.gmnoprint div {
-	background: #EEEEEE !important;
-}
-/*Contact form*/
-.ccheader {
-	margin: 0 auto;
-	padding: 2em;
-	text-align: center;
-}
-.ccheader h1 {
-	margin: 0;
-	font-weight: 300;
-	font-size: 2.5em;
-	line-height: 1.3;
-}
-/* Form CSS*/
-textarea {
-	resize: none;
-}
-.ccform {
-	margin: 0 auto;
-	width: 800px;
-}
-.ccfield-prepend{
-	margin-bottom:10px;
-	width:100%;
-}
-.ccform-addon{
-	color:#f8ae45; 
-	float:left;
-	padding:8px;
-	width:8%;
-	background:#FFFFFF;
-	text-align:center;  
-}
-.ccformfield {
-	color:#000000; 
-	background:#FFFFFF;
-	border:none;
-	padding:15.5px;
-	width:91.9%;
-	margin-left: auto;
-	margin-right: auto;
-	display:block;
-	font-family: 'Lato',Arial,sans-serif;
-	font-size:14px;
-}
-.ccformfield {
-	font-family: 'Lato',Arial,sans-serif;
-}
-
-input[type=radio] {
-  display: inline;
-}
-
-.rfield {
-	color:#000000; 
-	background:#FFFFFF;
-	border:none;
-	padding:35.5px;
-	font-family: 'Lato',Arial,sans-serif;
-	font-size:35px;
-	display: block;
-}
-.ccbtn{
-	display:block;
-	border:none;
-	background:#f8ae45;
-	color:#FFFFFF;
-	padding:12px 25px;
-	cursor:pointer;
-	text-decoration:none;
-	font-weight:bold;
-}
-.ccbtn:hover{
-	background:#d8850e;
-}
-img {
-	height: 32px;
-	width: 32px;
-}
-.social {
-	position: center;
 }
 /*Shop Page*/
 /*Shop Page*/
@@ -1129,6 +1032,10 @@ img {
 	Add styles for even 
 	smaller screens!
 	*/
+
+	.ddsd {
+		display: block;
+	}
 	#top_nav{
 		margin-left: 2%;
 	}

@@ -66,11 +66,11 @@
 	<div class="col-2">	
 		
 		<div class="mapHolder">
-			<h2 id "description">Look to see where we are today!</h2>
-			<div id="description">This map shows all of our locations, if you would like to know what day we are where, please select from the dropdown menu</div>
+			<h2 class="mapDescription">Look to see where we are today!</h2>
+			<div class="mapDescription">This map shows all of our locations, if you would like to know what day we are where, please select from the dropdown menu</div>
 			<div id="dropdown">
 			  <select id="locations" onchange="filterLocations(this.value);">
-				<option value="">-- All --</option>
+				<option id="optionAll" value="">-- All --</option>
 				<option value="Wednesday">Wednesday 11am-2pm</option>
 				<option value="Thursday">Thursday 11am-3pm</option>
 				<option value="Saturday">Saturday 10am-4pm</option>
