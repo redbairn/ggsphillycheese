@@ -228,98 +228,7 @@ body {
 	padding:0;
 	background-color: #E6E6E6;
 }
-/*Homepage*/
-.main {
-	font-weight: 400;
-	font-size: 1em;
-	padding-bottom:60px;
-	width:100%;
-}
-.picRight {
-	float: right;
-	margin: 0 10px 20px 15px;
-	/*position: relative;*/
-	align-content: right;
-	width: 200px;
-	height: auto;
-}
-.picCenter {
-	float: center;
-	margin: 0 15px 0px 0px;
-	/*position: relative;*/
-	align-content: center;
-	width: 200px;
-	height: auto;
-	
-}
-.picLeft {
-	float: left;
-	margin: 0 15px 0px 0px;
-	/*position: relative;*/
-	align-content: right;
-	width: 200px;
-	height: auto;
-	
-}
-.clearText {
-	clear: both;
-}
-/*_Wrappers for sections_*/
-.first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.third {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fourth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fifth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sixth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.textLeft{
-	margin-right:10%;
-}
-.textRight{
-	margin-left:10%;
-}
-.main h2{
-	text-align:center;
-}
 
-/*Reviews*/
-.reviews{
-	margin-top:10%;
-	margin-bottom:10%;
-}
-
-img {
-	height: 32px;
-	width: 32px;
-}
-
-/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
-.fb-post {
-  width: 500px; /*Betweem 350-750px*/
-}
 
 
 /*Footer*/
@@ -391,6 +300,109 @@ footer{
 	border-top-width: 0.25px;
 	border-style: solid;
 }
+
+/*Homepage*/
+.main {
+	font-weight: 400;
+	font-size: 1em;
+	padding-bottom:60px;
+	width:100%;
+}
+.picRight {
+	float: right;
+	margin: 0 10px 20px 15px;
+	/*position: relative;*/
+	align-content: right;
+	width: 200px;
+	height: auto;
+}
+.picCenter {
+	float: center;
+	margin: 0 15px 0px 0px;
+	/*position: relative;*/
+	align-content: center;
+	width: 200px;
+	height: auto;
+	
+}
+.picLeft {
+	float: left;
+	margin: 0 15px 0px 0px;
+	/*position: relative;*/
+	align-content: right;
+	width: 200px;
+	height: auto;
+	
+}
+
+.clearText {
+	clear: both;
+}
+/*_Wrappers for sections_*/
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fifth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sixth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textLeft{
+	margin-right:10%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.textRight{
+	margin-left:10%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.main h2{
+	text-align:center;
+}
+.over {
+	display: block;
+	overflow: hidden;
+}
+
+/*Reviews*/
+.reviews{
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
+img {
+	height: 32px;
+	width: 32px;
+}
+
+/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
+.fb-post {
+  width: 500px; /*Betweem 350-750px*/
+}
+
 /*ContactPage Css*/
 /*_Google Map*/
 /*_Set display preferences for description. */
@@ -449,7 +461,7 @@ select, option {
 #map {
 	height: 0;
     overflow: hidden;
-    padding-bottom: 22.25%;
+    padding-bottom: 42.25%;
     padding-top: 40px;
     position: relative;
     border-radius: 25px;

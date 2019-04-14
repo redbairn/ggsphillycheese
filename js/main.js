@@ -6,7 +6,7 @@ function dayOfWeekLocationAdd() {
   var number = day.getDay();
   var time  = day.getHours();
   var advert;
- 
+   
 switch(new Date().getDay()) {
     //Sunday
     case 0: 
@@ -80,8 +80,8 @@ function initMap() {
     var locations = [
         ["0", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Central Park,</b><br/>Sandyford<br/><i style='color:blue;'>Wednesday 11am-2pm</i></div>", image, 53.270239, -6.203806, "Wednesday"],
         ["1", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Merrion Square,</b><br/>Dublin 4<br/><i style='color:blue;'>Thursday 11am-3pm</i></div>", image, 53.339638, -6.249067, "Thursday"],
-        ["2", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i style='color:blue;'>Saturday 10am-4pm</i></div>", image, 53.369157, -6.175849 , "Saturday"],
-        ["3", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Herbert Park</b><br/>Dublin 6<br/><i style='color:blue;'>Sunday 10am-4pm</i></div>", image,53.327458, -6.235408,  "Sunday"]
+        ["2", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Clontarf Red Stables,</b><br/>Dublin 3<br/><i style='color:blue;'>Saturday 10am-4pm</i></div>", image, 53.369157, -6.175849, "Saturday"],
+        ["3", "<div style='float:left'><img src='./img/locationicon.png'></div><div style='float:right; padding: 10px;'><b>Herbert Park</b><br/>Dublin 6<br/><i style='color:blue;'>Sunday 10am-4pm</i></div>", image, 53.327458, -6.235408, "Sunday"]
     ];
 
     // Create a map.
@@ -171,13 +171,15 @@ function initMap() {
         }
     }
 
-        //Resize Function
-        google.maps.event.addDomListener(window, "resize", function() {
-            var center = map.getCenter();
-            google.maps.event.trigger(map, "resize");
-            map.setCenter(center);
-        });
-    
+    //Resize Function
+    google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center);
+        map.setZoom(11);
+    });
+
+
     // Close all info windows and open only one that corresponds to when marker is clicked.
     function closeAllInfoWindows(map) {
         markers.forEach(function(marker) {
