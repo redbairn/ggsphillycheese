@@ -1357,9 +1357,10 @@ img {
 	/*Shop Page*/
 	#chalk_board{
 		min-height: 90%;
-		width: 90%;
-		margin-left:5%;
-		margin-top:5%;
+		width: 100%;
+		margin-left:auto;
+		margin-top:auto;
+		border-radius: 0;
 	}
 	
 	#menu_txt{
@@ -1372,11 +1373,12 @@ img {
 	.merch_menu{
 		
 		min-height: 90%;
-		width: 90%;
-		margin-left:5%;
-		margin-top:5%;
+		width: 100%;
+		margin-left:auto;
+		margin-top:auto;
 		margin-bottom:5%;
 		font-size: 1.5em;
+		border-radius: 0;
 	}
 
 	.merch_items{
