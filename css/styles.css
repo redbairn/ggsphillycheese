@@ -1155,6 +1155,7 @@ textarea {
 		margin-left:5%;
 		margin-right:5%;
 	}
+
 	#map {
 	height: 200px;
 	}
@@ -1248,13 +1249,47 @@ textarea {
 		margin-right:0;
 	}
 	/*Homepage*/
+	#index{
+		width: 90%;
+		margin: auto;
+	}
+	.sixth {
+		display: grid;
+	}
+	
+	.picRight {
+	float: none;
+	margin: auto;
+	/*position: relative;*/
+	align-content: center;
+	width: 80%;
+	height: auto;
+	}
+	.picCenter {
+	float: none;
+	margin: auto;
+	/*position: relative;*/
+	align-content: center;
+	width: 80%;
+	height: auto;
+		
+	}
+	.picLeft {
+		float: none;
+		margin: auto;
+		/*position: relative;*/
+		align-content: center;
+		width: 80%;
+		height: auto;
+		
+	}
 	.main {
 	
 	}
 	
 	blockquote{
-		width:90%;
-		margin:5%;
+		width:80%;
+		margin: auto;
 	}
 	#map {
 	height: 200px;
@@ -1301,6 +1336,9 @@ textarea {
 	}
 	.buyNow{
 		margin-left: 10%;
+	}
+	.nosmall{
+		display: none;
 	}
 
 	.nomobile{
