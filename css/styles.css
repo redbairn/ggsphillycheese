@@ -397,10 +397,17 @@ img {
 	width: 32px;
 }
 
-/*https://developers.facebook.com/docs/plugins/embedded-posts/*/
 .fb-post {
   width: 500px; /*Betweem 350-750px*/
 }
+
+#fbReviews {
+	width: 500px;
+	height: 179px; 
+	border:none;
+	overflow:hidden;
+}
+
 
 /*ContactPage Css*/
 /*_Google Map*/
