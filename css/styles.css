@@ -228,9 +228,6 @@ body {
 	padding:0;
 	background-color: #E6E6E6;
 }
-
-
-
 /*Footer*/
 footer{
 	left: 0;
@@ -400,14 +397,6 @@ img {
 .fb-post {
   width: 500px; /*Betweem 350-750px*/
 }
-
-#fbReviews {
-	width: 500px;
-	height: 179px; 
-	border:none;
-	overflow:hidden;
-}
-
 
 /*ContactPage Css*/
 /*_Google Map*/
@@ -600,7 +589,6 @@ textarea {
 .social {
 	position: center;
 }
-
 
 /*_Footer Wrapper*/
 .footer_wrapper {
@@ -1368,4 +1356,3 @@ textarea {
 			margin-left: 5%;
 	}
 }/*End of Media Queries*/
-
